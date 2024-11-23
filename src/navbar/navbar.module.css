@@ -1,0 +1,12 @@
+/* Footer Styles */
+
+/* Body and Page Container Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 160vh; /* Ensure the body takes the full viewport height */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+}
+
+
