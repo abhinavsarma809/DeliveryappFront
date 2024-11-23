@@ -1,0 +1,594 @@
+body{
+    background-color: white;
+}
+.container{
+    color:black;
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+}
+.imagecontainer {
+ 
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+    width: 70%;
+    padding-bottom: 100px;
+    
+}
+
+.image{
+    height: 70%;
+    width: 80%;
+    
+    position: relative;
+    left: 20%;
+}
+.email{
+    position:absolute;
+    top: 40%;
+    right:  70%;
+    width: 20%;
+    height: 3vh;
+    border:2px solid black;
+    border-radius: 30px;
+    background-color:white;
+    color: black;
+}
+.password{
+    position:absolute;
+    top: 50%;
+    right:  70%;
+    width: 20%;
+    height: 3vh;
+    border:2px solid black;
+    border-radius: 30px;
+    background-color:white;
+    color: black;
+}
+.errors{
+    position:absolute;
+    top: 43%;
+    right:  70%;
+    width: 20%;
+    height: 3vh;
+
+}
+.error{
+    position:absolute;
+    top: 53%;
+    right:  70%;
+    width: 20%;
+    height: 3vh;
+
+}
+.button{
+    position:absolute;
+    top: 63%;
+    right:  78%;
+   
+   
+}
+.h2{
+    display: flex;
+   position:relative;
+   top:89px;
+   right: 130px;
+   width: 280px;
+
+   
+
+
+
+   
+  
+}
+.data{
+    position:absolute;
+    top: 26%;
+    right:  70%;
+}
+.pro{
+    display: flex;
+    position: relative;
+    bottom: 10px;
+}
+.log{
+    position:absolute;
+    top: 70%;
+    right:  75%;
+}
+.signup{
+    color:yellowgreen;
+}
+.h1{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+
+    
+
+  
+}
+.rotate{
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    transform: rotate(-90deg);
+
+    position:absolute;
+    left:100%;
+    bottom: 86%;
+    color:orange;
+    background-color:blue;
+
+
+
+}
+@media (min-width: 2200px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .image {
+   
+        height: 80%;
+    }
+    .imagecontainer{
+        width: 100%;
+    }
+    .h1{
+        display: flex;
+        position: relative;
+        right: 37%;
+
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        transform: translate(40%,20%);
+        align-items: center;
+       
+
+    }
+    .data{
+        position:absolute;
+        top: 30%;
+        transform: translate(-10%,-70%);
+       
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        }
+        .rotate{
+            display: inline-block;
+            bottom: 1000px;
+        }
+}
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .image {
+        width: 80%;
+    }
+    .h1{
+        display: flex;
+        position: relative;
+        right: 28%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: relative;
+        left: 180px;
+        top: 253px;
+
+    }
+    .data{
+        position:absolute;
+        top: 30%;
+        right:  78%;
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        }
+        .rotate{
+            display: inline-block;
+            bottom: 1000px;
+        }
+}
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .image {
+        width: 80%;
+    }
+    .h1{
+        display: flex;
+        position: absolute;
+        right: 81%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: absolute;
+        right: 74%;
+        top: 253px;
+
+    }
+    .data{
+        position:absolute;
+        top: 30%;
+        right:  74%;
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        }
+        .rotate{
+            display: inline-block;
+            position:absolute;
+            left: 100%;
+            bottom: 1000px;
+            
+        }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .image {
+        width: 60px;
+        height: 700px;
+        margin-bottom: 120px;
+    }
+    .h1{
+        display: flex;
+        position: fixed;
+        right: 80%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: fixed;
+        right: 67%;
+        top: 253px;
+
+    }
+    .data{
+        position:fixed;
+        top: 29%;
+        right:  67%;
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        }
+        .rotate{
+            display: inline-block;
+            position:fixed;
+            left: 20%;
+            bottom: 1050px;
+            
+        }
+       
+}
+
+@media (max-width: 986px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .image {
+        width: 60px;
+        height: 400px;
+        margin-bottom: 120px;
+    }
+    .h1{
+        display: flex;
+        position: fixed;
+        right: 78%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: fixed;
+        right: 61%;
+        top: 253px;
+        font-size: 1.05em;
+
+    }
+    .data{
+        position:fixed;
+        top: 26%;
+        right:  66%;
+        font-size: 0.8em;
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        }
+        .rotate{
+            display: inline-block;
+            position:fixed;
+            left: 23%;
+            bottom: 1050px;
+            
+        }
+        .log{
+            display: inline-block;
+            margin-left: 50px;
+        }
+}
+@media screen and  (max-width: 768px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+      
+    }
+
+    .imagecontainer {
+        display: none;
+   
+    }
+    .h1{
+        display: flex;
+        position: fixed;
+        right: 48%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: fixed;
+        left: 80px;
+        top: 253px;
+        font-size: 2.05em;
+
+    }
+    .data{
+        position:fixed;
+        top: 26%;
+        right:  46%;
+        font-size: 1.05em;
+    }
+
+        .rotate{
+            display: inline-block;
+            position:fixed;
+            left: 52%;
+            bottom: 1040px;
+            
+        }
+        .log{
+            display: inline-block;
+            margin-left: 50px;
+        }
+        .email{
+            position: relative;
+            right: 130%;
+            width: 100%;
+
+        }
+        .errors{
+            transform: translateX(-0px) translateY(-70px);
+
+        }
+        .inputemail{
+            position: relative;
+            bottom: 170px;
+        }
+        .password{
+           position: relative;
+           transform: translateX(-100px) translateY(-130px);
+           width: 100%;
+        }
+        .error{
+            transform: translateX(-0px) translateY(-70px);
+        }
+        .button{
+            transform: translatex(10px)translateY(-160px);
+        }
+        .log{
+            transform: translatex(10px)translateY(-160px);
+        }
+}
+@media screen and (max-width: 606px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .imagecontainer {
+        display: none;
+   
+    }
+    .button{
+        transform: translateY(70px);
+    }
+    .h1{
+        display: flex;
+        position: fixed;
+        right: 30%;
+        top: 120px;
+    
+    }
+    .h2{
+        display: flex;
+        position: fixed;
+        left: 100px;
+        top: 253px;
+        font-size: 2.05em;
+
+    } 
+    .rotate{
+        display: inline-block;
+        position:fixed;
+        left: 70%;
+        bottom: 1040px;
+      
+        
+    }
+    .data{
+        position:fixed;
+        top: 26%;
+        right:  29%;
+        font-size: 1.05em;
+    }
+    .email{
+        transform: translate(57%,30%);
+    }
+    .password{
+        transform: translate(2%,-300%);
+    }
+    .errors{
+        transform: translate(40%,-130%);
+    }
+    .error{
+        transform: translate(40%,-130%);
+    }
+    .log{
+        font: 1em;
+        transform: translate(60%,-100%);
+    }
+    .button{
+        transform: translate(90%,-190%);
+    }
+
+}
+@media screen and (max-width: 456px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .imagecontainer {
+        display: none;
+   
+    }
+    .button{
+        transform: translateY(70px);
+    }
+    .h1{
+        display: flex;
+        position: fixed;
+        right: 30%;
+        top: 120px;
+
+    
+    }
+    .h2{
+        display: flex;
+        position: fixed;
+        left: 100px;
+        top: 253px;
+        font-size: 2.05em;
+
+    } 
+    .rotate{
+        display: inline-block;
+        position:fixed;
+        left: 70%;
+        bottom: 1040px;
+      
+        
+    }
+    .data{
+        position:fixed;
+        top: 26%;
+        right:  9%;
+        font-size: 1.05em;
+    }
+    .email{
+        transform: translate(97%,40%);
+    }
+    .password{
+        transform: translate(40%,-300%);
+    }
+    .errors{
+        transform: translate(60%,-130%);
+    }
+    .error{
+        transform: translate(60%,-130%);
+    }
+    .log{
+        font: 1em;
+        transform: translate(90%,-80%);
+    }
+    .button{
+        transform: translate(100%,-190%);
+    }
+
+}
+
+
+.divcontain{
+    color: black;
+    transform: translate(10%,20%);
+}
+.hand{
+    width: 40px;
+    height: 40px;
+    transform: rotate(10deg);
+    margin-left: 10px;
+}
+.footer {
+    background-color: gray;
+    width: 125%; 
+    min-height: 500px;
+    margin-top: auto;
+    position: relative; 
+ 
+    transform: translate(0%,0%);
+    right: 170px;
+}
+
+body,html{
+
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
