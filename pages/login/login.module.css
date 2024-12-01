@@ -5,22 +5,24 @@ body{
     color:black;
     display:flex;
     flex-direction: row;
-    flex: 1;
-}
-.imagecontainer {
- 
-    justify-content: center;
-    align-items: center;
-    display: block;
 
-    width: 70%;
-    padding-bottom: 100px;
+    padding: 0 2em;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 100%;
+ 
+
+    min-height: calc(100vh - 60px);
+    
     
 }
 
 .image{
     height: 70%;
-    width: 80%;
+    max-width: 700px;
+    padding: 0 2em;
+
+ 
     
     position: relative;
     left: 20%;
@@ -60,7 +62,8 @@ body{
     top: 53%;
     right:  70%;
     width: 20%;
-    height: 3vh;
+
+
 
 }
 .button{
@@ -72,9 +75,12 @@ body{
 }
 .h2{
     display: flex;
-   position:relative;
-   top:89px;
-   right: 130px;
+    padding-top: 100px;
+    transform: translate(-50%);
+ 
+
+   
+   
    width: 280px;
 
    
@@ -105,7 +111,7 @@ body{
 .h1{
     display: flex;
     position: relative;
-    bottom: 30px;
+    
 
     
 
@@ -121,7 +127,10 @@ body{
     left:100%;
     bottom: 86%;
     color:orange;
-    background-color:blue;
+    background-color:beige;
+
+
+    box-sizing: border-box;
 
 
 
@@ -152,7 +161,7 @@ body{
     }
     .h2{
         display: flex;
-        transform: translate(40%,20%);
+        transform: translate(60%,-80%);
         align-items: center;
        
 
@@ -170,7 +179,8 @@ body{
         }
         .rotate{
             display: inline-block;
-            bottom: 1000px;
+            transform: (-10%);
+
         }
 }
 @media (min-width: 2000px) {
@@ -210,9 +220,12 @@ body{
         margin-left: 100px;
         }
         .rotate{
-            display: inline-block;
-            bottom: 1000px;
+            display: flex;
+            position: relative;
+          
+          
         }
+        
 }
 @media (min-width: 1800px) {
     .container {
@@ -258,7 +271,7 @@ body{
             
         }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
     .container {
         max-width: 1800px;
         margin: 0 auto;
@@ -267,46 +280,89 @@ body{
         height: auto;
     }
 
-    .image {
-        width: 60px;
-        height: 700px;
-        margin-bottom: 120px;
-    }
+    
     .h1{
         display: flex;
-        position: fixed;
-        right: 80%;
-        top: 120px;
+        left: 130px;
+        bottom: 20px;
+   
+        font-size: 1.9em;
+       
+   
     
     }
     .h2{
         display: flex;
-        position: fixed;
-        right: 67%;
-        top: 253px;
+        position: relative;
+
+       left: 260px;
+        font-size: 1em;
+        
+      
 
     }
     .data{
         position:fixed;
         top: 29%;
-        right:  67%;
+        right:  66%;
+        font-size: 0.85em;
     }
     .image{
         display: flex;
-        width: 100%;
-        margin-left: 100px;
+        width: 40%;
+        height: auto;
+        margin-left: 210px;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 200%;
+        margin-top: -280px; 
+        max-width: 400px;
+   
+        top:300px;
+    
         }
         .rotate{
             display: inline-block;
-            position:fixed;
-            left: 20%;
-            bottom: 1050px;
+            position:relative;
+            bottom: 10px;
+            margin-right: -600px;
+       
+  
+  
             
         }
+        .footer{
+         display: flex;
+         flex-wrap:wrap ;
+         position: absolute;
+         bottom: 70px;
+         right: -98px;
+
+        }
+        .data{
+            position:absolute;
+        }
+        .order{
+        
+           padding-top: 20px;
+        }
+       .pages{
+        margin-right: 10%;
+       }
+       .links{
+        margin-left: 91%;
+        position: relative;
+        bottom: 250px;
+        font-size: 0.9em;
+   
+       }
+       .submit{
+        margin-top: 11vh;
+       }
        
 }
 
-@media (max-width: 986px) {
+@media screen and (max-width:968px)  {
     .container {
         max-width: 1800px;
         margin: 0 auto;
@@ -318,28 +374,29 @@ body{
     .image {
         width: 60px;
         height: 400px;
+        left: -100px;
         margin-bottom: 120px;
     }
     .h1{
         display: flex;
-        position: fixed;
+        position: relative;
         right: 78%;
-        top: 120px;
+    
     
     }
     .h2{
         display: flex;
-        position: fixed;
-        right: 61%;
-        top: 253px;
+        position: absolute;
+        right: 71%;
+        bottom: 450px;
         font-size: 1.05em;
 
     }
     .data{
-        position:fixed;
-        top: 26%;
+        position:absolute;
+        top: 28%;
         right:  66%;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .image{
         display: flex;
@@ -348,14 +405,29 @@ body{
         }
         .rotate{
             display: inline-block;
-            position:fixed;
-            left: 23%;
-            bottom: 1050px;
+            position:absolute;
+            bottom: 467px;
+            left: 97%;
+          
             
         }
         .log{
             display: inline-block;
             margin-left: 50px;
+        }
+        .footer {
+            transform: none;
+       
+            display: flex;
+     
+         
+            
+            
+        }
+        .navu{
+            margin-left: 20px;
+
+       
         }
 }
 @media screen and  (max-width: 768px) {
@@ -374,45 +446,48 @@ body{
     }
     .h1{
         display: flex;
-        position: fixed;
-        right: 48%;
-        top: 120px;
+        position: relative;
+        left:270px;
+        bottom: 40px;
+
     
     }
     .h2{
         display: flex;
-        position: fixed;
-        left: 80px;
-        top: 253px;
-        font-size: 2.05em;
+        position: absolute;
+        left: 420px;
+        top: 3px;
+        font-size: 1.05em;
 
     }
     .data{
-        position:fixed;
+        position:absolute;
         top: 26%;
-        right:  46%;
+        right:  22%;
         font-size: 1.05em;
     }
 
         .rotate{
             display: inline-block;
-            position:fixed;
-            left: 52%;
-            bottom: 1040px;
-            
+            position:absolute;
+            left: 82px;    
+            bottom: 470px;   
         }
         .log{
             display: inline-block;
             margin-left: 50px;
         }
         .email{
-            position: relative;
-            right: 130%;
+
+            right: 43vh;
+          
             width: 100%;
+            top:410px;
 
         }
         .errors{
-            transform: translateX(-0px) translateY(-70px);
+          left: 40vw;
+     
 
         }
         .inputemail{
@@ -421,17 +496,31 @@ body{
         }
         .password{
            position: relative;
-           transform: translateX(-100px) translateY(-130px);
+           transform: translateX(50px) translateY(-70px);
            width: 100%;
+           right: 52vh;
+           top: 57vh;
+        
         }
         .error{
-            transform: translateX(-0px) translateY(-70px);
+          left: 40vw;
         }
         .button{
-            transform: translatex(10px)translateY(-160px);
+            transform: translatex(220px)translateY(-8px);
         }
         .log{
-            transform: translatex(10px)translateY(-160px);
+            transform: translatex(220px)translateY(-10px);
+        }
+        .footer{
+            display: flex;
+            flex: 1 1 x;
+            flex-wrap: wrap;
+            height: 700px;
+            font-size: 0.8em;
+   
+            
+          
+       
         }
 }
 @media screen and (max-width: 606px) {
@@ -450,60 +539,68 @@ body{
     }
     .h1{
         display: flex;
-        position: fixed;
-        right: 30%;
-        top: 120px;
+        position: absolute;
+        left: 230px;
+        top: 10px;
     
     }
     .h2{
         display: flex;
-        position: fixed;
-        left: 100px;
-        top: 253px;
-        font-size: 2.05em;
+        position: absolute;
+        left: 360px;
+        top:  -30px;
+        font-size: 1.3em;
 
     } 
     .rotate{
         display: inline-block;
-        position:fixed;
-        left: 70%;
-        bottom: 1040px;
+        position:absolute;
+        left: 80px;
+        bottom:468px;
       
         
     }
     .data{
-        position:fixed;
-        top: 26%;
-        right:  29%;
-        font-size: 1.05em;
+        position:absolute;
+        top: 22%;
+        right:  32%;
+        font-size: 0.6em;
     }
     .email{
-        transform: translate(57%,30%);
+        transform: translate(250%,-180%);
+
     }
     .password{
-        transform: translate(2%,-300%);
+        transform: translate(280%,-370%);
+    
     }
     .errors{
-        transform: translate(40%,-130%);
+        transform: translate(10%,-120%);
     }
     .error{
-        transform: translate(40%,-130%);
+        transform: translate(10%,-80%);
+        font-size: 0.8em;
     }
     .log{
         font: 1em;
-        transform: translate(60%,-100%);
+        transform: translate(180%,30%);
     }
     .button{
-        transform: translate(90%,-190%);
+        transform: translate(220%,-10%);
+    }
+    .order{
+       position: relative;
+
     }
 
 }
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 499px) {
     .container {
         max-width: 1800px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
+        padding: 0 2em;
     }
     .imagecontainer {
         display: none;
@@ -514,52 +611,68 @@ body{
     }
     .h1{
         display: flex;
-        position: fixed;
-        right: 30%;
-        top: 120px;
+        position: absolute;
+        
+        top: 12px;
 
     
     }
     .h2{
         display: flex;
-        position: fixed;
-        left: 100px;
-        top: 253px;
-        font-size: 2.05em;
+        position: absolute;
+        left: 300px;
+        top: 2%;
+
+
+        font-size: 1.09em;
 
     } 
     .rotate{
         display: inline-block;
-        position:fixed;
-        left: 70%;
-        bottom: 1040px;
+        position:absolute;
+        left: 80px;
+      
+        bottom:470px;
       
         
     }
     .data{
-        position:fixed;
-        top: 26%;
-        right:  9%;
-        font-size: 1.05em;
+        position:absolute;
+        top: 27%;
+        right:  23%;
+        font-size: 0.7em;
     }
     .email{
-        transform: translate(97%,40%);
+        transform: translate(210%,-80%);
     }
     .password{
-        transform: translate(40%,-300%);
+        transform: translate(240%,-300%);
     }
     .errors{
-        transform: translate(60%,-130%);
+        transform: translate(10%,-70%);
     }
     .error{
-        transform: translate(60%,-130%);
+        transform: translate(10%,10%);
+        font-size: 0.7em;
     }
     .log{
-        font: 1em;
-        transform: translate(90%,-80%);
+        font: 0.2em;
+        transform: translate(220%,20%);
     }
     .button{
-        transform: translate(100%,-190%);
+        transform: translate(200%,0%);
+    }
+    .footer{
+        font-size: 0.5em;
+    }
+    .order{
+        margin-top: 2em;
+        
+    }
+    .navu{
+        position: relative;
+        right: 10px;
+
     }
 
 }
@@ -576,19 +689,175 @@ body{
     margin-left: 10px;
 }
 .footer {
-    background-color: gray;
-    width: 125%; 
-    min-height: 500px;
-    margin-top: auto;
-    position: relative; 
+    background-color:#ececec;
+    width: 100vw; 
+    max-width: 100vw;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+transform: translate(-130px,100px);
+    height: 400px;
+    padding: 0 2em; 
+    flex: 1 1  calc(25%-30px);
+   
+  
+    
  
-    transform: translate(0%,0%);
-    right: 170px;
+
+
+
+    position: relative; 
+    box-sizing: border-box;
+ 
+
 }
 
-body,html{
 
-    min-height: 100vh; 
+.order{
     display: flex;
+   
+
+
+    position: absolute;
+    top: 1vh;
+    left: 14%;
+    color: #000;
+    font-size: clamp(1em,3vw,3em);
+
+}
+
+.navu{
+
+    position: relative;
+    bottom: 18vh;
+    left: 21%;
+    transform: rotate(90deg);
+    background-color: gray;
+    font-size: clamp(1em,1vw,3em);
+
+
+    color: #000;
+}
+.deals{
+
+    color: #000;
+    position: relative;
+    bottom: 18vh;
+    left: 24%;
+    max-width: 30em;
+    font-size: clamp(1em,2vw,3em);
+    display: flex;
+    flex-wrap: wrap;
+}
+.legal{
+    margin-bottom: 40vh;
+    position: relative;
+ 
+    left: 25%;
+    font-size: clamp(1em,2vw,3em);
+    color: #000;
+    
+}
+.apple{
+
+    display: flex;
+    max-width: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+    position: absolute;
+    left: 13%;  
+    background-color: #000;
+    border: 5px solid black;
+    border-radius: 13px;
+    margin-bottom: 8vh;
+
+
+
+ 
+}
+.apples{
+    display: flex;
+    max-width: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    position: absolute;
+    left: 20%;  
+    background-color: #000;
+    border: 5px solid black;
+    border-radius: 13px;
+    margin-bottom: 8vh;
+}
+.sub{
+ 
+        display: flex;
+        width: 20%;
+        max-width: 400em;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: #000;
+    
+        position: absolute;
+        left: 30%;  
+        background-color:white;
+        border: 5px solid transparent;
+        border-radius: 13px;
+        margin-bottom: 8vh;
+
+}
+.submit{
+    position: relative;
+    right: 19% ;
+    bottom: 4vh;
+    max-width: 100px;
+    border: 6px solid transparent;
+    padding: 1px;
+    border-radius: 20px;
+    background-color:orange;
+    color: black;
+}
+.pages{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    position: relative;
+    right:  22vh;
+    bottom: vh;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  
+ 
+
+    
+
+
+}
+.Terms,.privacy,.cookies,.Modern{
+    color: #000;
+
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    right:  20vh;
+    bottom: vh;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  
+ 
+}
+.sign,.helps,.create,.help,.Add{
+    color: #000;
+
 }

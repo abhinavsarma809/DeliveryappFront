@@ -2,7 +2,7 @@
 
 
 
-const BACKEND_URL = 'http://localhost:5000'; // Correct URL of the backend API
+const BACKEND_URL = 'http://localhost:5000'; 
 
 export const login = async (data) => {
     console.log(BACKEND_URL); 
@@ -46,4 +46,53 @@ export const register = async (data) => {
       throw error;
     }
   };
+
+ 
+  export const getFood = async (data) => {
+    const response = await fetch(`${BACKEND_URL}/api/food`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+
+    });
+  
+    if (response.status === 200 || response.status === 400) {
+      return response.json();
+    }
+    throw new Error('Something went wrong');
+  };
+  export const getFoodById = async (id) => {
+    const response = await fetch(`${BACKEND_URL}/api/food/${id}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+
+    });
+  
+    if (response.status === 200 || response.status === 400) {
+      return response.json();
+    }
+    throw new Error('Something went wrong');
+  };
+
+  export const updateUser = async (id, data) => {
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/user/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `${localStorage.getItem('token')}`,
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to update user details');
+      }
+  
+      return await response.json();
+    } catch (error) {
+      console.error('Error updating user:', error);
+      throw error;
+    }
+  };
+
   

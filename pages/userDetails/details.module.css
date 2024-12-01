@@ -1,0 +1,154 @@
+.container{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.detailsContainer{
+display: flex;
+flex-direction: row;
+gap: 50px;
+padding: 0 2em;
+
+   
+
+}
+.cardpayments{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   align-items: flex-start;
+ 
+}
+
+.cardDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.addingcard{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid black;
+    max-width: 300px;
+    width: 200px;
+    padding: 1em;
+}
+.cardItem{
+ display: flex;
+ flex-direction: column;
+ border: 1px solid;
+ max-width: 100%;
+ width: 20vw;
+ height: 16vh;
+font-size: small;
+gap: 0;
+ 
+
+}
+.cardDialog{
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+ 
+
+    backdrop-filter: blur(5px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    border: 5px solid ;
+
+}
+.Removals{
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    gap: 130px;
+    align-self: flex-start;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    right: 3%;
+    
+
+
+   
+
+}
+.removals{
+    
+
+    
+}
+.remove{
+display: flex;
+align-self: flex-end;
+background-color: orange;
+flex-wrap: wrap;
+max-width: 100px;
+}
+.cardDialogHeader{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid;
+    max-width: 500px;
+    width: 40vw;
+    background-color: white;
+
+    padding: 0 1em;
+ 
+    min-height: 60vh;
+    
+    
+
+}
+.cardNumber{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+.cardNumbers{
+    background-color: white;
+    color: #000;
+    width: 20vw;
+    min-height: 40px;
+
+   
+}
+.Edit{
+    max-width: 60px;
+    font-size: small;
+    display: flex;
+    align-self: flex-end;
+ 
+  text-decoration: underline;
+ 
+
+}
+.edit{
+    background-color: orange;
+    max-width: 60px;
+    max-height: 8vh;
+}
+
+.cardActions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 1vh;
+}

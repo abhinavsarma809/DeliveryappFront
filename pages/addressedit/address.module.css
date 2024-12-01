@@ -1,0 +1,208 @@
+
+.header{
+    display: flex;
+    color: #000;
+    border: 1px solid ;
+    max-width: 100%;
+    width: 70vw;
+    position: relative;
+    bottom: 4vh;
+    justify-content: space-between;
+    flex: 1 1 calc(25%-30vw);
+
+    align-items: flex-end;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+
+    min-height: 100vh;
+    width: 100%;
+
+color: #000;
+
+    gap:60px;  
+    color: #000; 
+}
+.mainbar{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 3px solid red;
+    max-width: 100%;
+    width:50vw;
+    justify-content: flex-start;
+    
+}
+.cart{
+    width: 20%;
+    border: 4px solid white;
+    background-color: green;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    border-radius: 10px;
+    opacity: 0px;
+  
+}
+.Edit{
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+}
+
+.changeAddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+.addAddress{
+   width: 
+   15vw;
+   max-width: 100%;
+   min-height: 200px;
+   border: 2px dotted black;
+   align-items: center;
+   background-color: white;
+   color: #000;
+ 
+
+}
+.changing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dotted black;
+    max-width: 100%;
+    width: 20vw;
+
+}
+.addAddress1,.addAddress2{
+background-color: white;
+color: #000;
+}
+
+
+.adding{
+
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+ 
+
+    backdrop-filter: blur(5px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    border: 5px solid ;
+
+   
+}
+.city{
+max-width: 140px;
+height: 80%;
+background-color: white;
+color: #000;
+
+
+
+
+
+
+}
+.input{
+    background-color: white;
+    color: #000;
+}
+.adding1{
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid;
+    max-width: 500px;
+    width: 40vw;
+
+    padding: 0 1em;
+ 
+    min-height: 60vh;
+    gap: 40px;
+    
+
+    
+}
+.dropdown{
+    position: absolute;
+    top: 57%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #000;
+
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.arrow {
+    margin-left: -25px;
+
+  }
+
+  .inputContainer{
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+  }
+  .enter{
+
+  }
+
+.inputs{
+    max-width:300px;
+    width: 50vw;
+    display: flex;
+
+
+    min-height: 180px;
+    background-color: white;
+    color: #000;
+    padding: 1em;
+}
+.save{
+    background-color:orange;
+    align-self: flex-end;
+    flex: 1;
+}
+.displayAddress{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,808 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 10px;
+  
+ 
+
+ 
+    min-height: 100vh;
+
+  
+    color: #000;
+
+}
+.display{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ 
+
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+  
+    width: 90vw;
+    border:3px solid ;
+
+
+    height: 70px;
+  
+    border: 1px solid transparent;
+    border-radius: 20px;
+    gap: 20px;
+ 
+    box-sizing: border-box;
+    color: #000;
+    background-color: white;
+    justify-content:space-between;
+    padding: 1em;
+    align-items: center;
+   
+}
+
+.cart{
+    width: 20%;
+    border: 4px solid white;
+    background-color: green;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    border-radius: 10px;
+    opacity: 0px;
+  
+}
+.img{
+width: 10%;
+
+}
+.cartDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid transparent;
+    width: 20%;
+    background-color: green;
+
+}
+.checkoutButton{
+
+    width: 18vw;
+    padding: 1px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+}
+.cartItem{
+    border: 3px solid white ;
+}
+.h4{
+    flex: 1;
+    text-align: start;
+}
+.address{
+    flex:1;
+    max-width: 100%;
+}
+.mainbar {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+ 
+    width:  80vw;
+
+
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.menuorders{
+    display: flex;
+}
+.class12{
+    background-color: orange;
+    border-radius:23px ;
+
+}
+.uk{
+    transform: rotate(90deg);
+    background-color: orange;
+    
+
+}
+.user{
+    background-color: #000;
+    border: 3px solid transparent;
+    color: orange;
+    width: auto;
+    border-radius: 48px;
+    font-size: small;
+    white-space: nowrap;
+    flex: 0;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+.image1{
+   width: 50vw;
+}
+.basket{
+    width: 50vw;
+}
+.All{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    background-color: white;
+    color: #000;
+    border-radius: 23px;
+}
+.offers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: orange;
+    color: white;
+}
+.offers1{
+    background-color: #000;
+    border-radius: 23px;
+    width: 10%;
+    color:white;
+}
+
+.foodImage{
+    max-width: 300px;
+    max-height: 300px;
+  
+}
+.foodCard{
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1em; 
+    display: flex;
+    flex-direction: row;
+}
+.mcFood{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    max-width: 200px;
+}
+.Burger{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.burgers{
+    background-color: white;
+
+  
+    display: block;
+   
+    align-self:flex-end;
+   
+    border: 3px solid;
+    background-color:black;
+    border-radius: 50px;
+    
+}
+.burgers1{
+   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color:white;
+  cursor: pointer;
+
+
+
+}
+.BurgerImage{
+    display: block; 
+    width: 100%; 
+     
+  }
+.BurgerImage1{
+  display: block; 
+  width: 100%; 
+   
+}
+.foodDisplay1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.foodCard1{
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1em; 
+    display: flex;
+    flex-direction: row;
+}
+.mcFood1{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    max-width: 200px;
+}
+.Burger1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.burgers1,.burgers123,.burgers12{
+
+
+  
+    display: block;
+   
+    align-self:flex-end;
+   
+    border: 3px solid transparent;
+    background-color:white;
+    border-radius: 50px ;
+    color: black;
+    
+}
+
+
+.BurgerImage1{
+  display: block; 
+  width: 100%; 
+   
+}
+.foodDisplay1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.foodDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.BurgerImage2{
+    display: block; 
+    width: 100%; 
+     
+  }
+  .foodDisplay2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  .foodCard2{
+     
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      font-size: 1em; 
+      display: flex;
+      flex-direction: row;
+  }
+  .mcFood2{
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      max-width: 200px;
+  }
+  .Burger2{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+  }
+  .burgers2{
+      background-color: white;
+  
+    
+      display: block;
+     
+      align-self:flex-end;
+     
+      border: 3px solid transparent;
+      background-color:black;
+      border-radius: 50px;
+      
+  }
+  .burgers123{
+     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color:black;
+    cursor: pointer;
+  
+  
+  
+  }
+  .BurgerImage2{
+    display: block; 
+    width: 100%; 
+     
+  }
+  .foodDisplay2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  .foodDisplay{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  .bug1,.bug2{
+  
+
+  
+    display: block;
+   
+    align-self:flex-end;
+   
+    border: 3px solid;
+    background-color:black;
+    border-radius: 50px;
+    
+}
+ 
+
+@media screen and (max-width:1300px){
+    .foodImage{
+        max-width: 300px;
+    }
+   .mcFood1{
+    max-width: 150px;
+   }
+   .mcFood{
+    max-width: 150px;
+   }
+   .mcFood2{
+    max-width: 150px;
+   }
+   
+}
+
+
+.DeliveryContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+
+  
+}
+
+.DeliveryContainer1,.DeliveryContainer2,.DeliveryContainer3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+  
+}
+.DeliveryContainer3{
+    background: #03081F;
+    color:white;
+
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.locationDetails{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 1000;
+    position: relative;
+    bottom: 50vh;
+    background: #03081FF7;
+    color: white;
+
+    max-width: 300px;
+}
+
+
+
+body,html{
+    width: 100vw;
+}
+.snaper{
+    width: 90vw;
+    position: relative;
+    bottom: 22vh;
+    right: 8vh;
+}
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction:column;
+    width: 100%;
+    
+
+    box-sizing: border-box;
+    
+
+ 
+
+    justify-content: space-between;
+
+ 
+
+
+
+    flex-wrap: wrap;
+ 
+
+
+  
+
+  
+
+
+  
+    gap: 10px;
+
+}
+
+    
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+@media screen and (max-width:456px){
+    
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction:column;
+    
+        
+    
+        justify-content: space-between;
+    
+    
+    
+    }
+    .upperPart{
+        display: flex;
+        flex-direction:column ;
+        padding: auto;
+        flex-wrap: wrap;
+        padding: 1em;
+        align-items: center;
+    
+    
+       
+    }
+    
+        
+    }
+    .middlePart{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .brands{
+        display: flex;
+        gap: 20px;
+    }
+    .social{
+        display: flex;
+    
+    }
+    
+    .pages{
+        display: flex;
+        flex-direction: column;
+    
+    
+    
+    
+    }
+    .apple,.apples{
+        max-width: 100px;
+        padding: 1em;
+    }
+    .sub{
+        max-width: 200px;
+        background-color: white;
+        border: 3px solid transparent;
+        border-radius: 20px;
+       height: 7vh;
+    }
+    .submit{
+        height: 6vh;
+        color:beige;
+        background-color: orange;
+        border-radius: 20px;
+    }
+    .Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+        color: #000;
+    }
+    .LastRow{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    
+        padding: 2em;
+    }
+    .socialMedia{
+        display: flex;
+    
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+    }
+    @media screen and (max-width:740px) {
+        .mainImage{
+            max-width: 500px;
+        }
+        .offers{
+            max-width: 600px;
+    
+        }
+        .header{
+            max-width: 600px;
+        }
+        .mainbar{
+            max-width: 600px;
+     
+        }
+        .category{
+            max-width: 600px;
+     
+      
+      
+        }
+        .menu{
+            max-width: 600px;
+        }
+        .Knowabout{
+            max-width: 600px;
+        }
+        .riders{
+            max-width: 600px;
+        }
+        .footer{
+            max-width: 650px;
+            font-size: 0.5em;
+        }
+    }
+    .Pizza{
+    height: 37px;
+    font-size: 0.8em;
+    }
+    .offers{
+        font-size: 0.7em;
+    }
+    .copyright{
+   
+       
+    }
+
+    @media screen and (max-width:586px){
+        .reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .h4{
+            display: none;
+        }
+        .class,.class12,.class1{
+            display: none;
+            
+        }
+        .user{
+            background-color: orange;
+            color: #000;
+        }
+        .nenu{
+            display: none;
+        }
+        .offers{
+            max-width: 400px;
+        }
+        .All{
+            max-width: 400px;
+            font-size: 0.8em;
+        }
+        .offerAll{
+            font-size: 0.7em;
+        }
+        .foods{
+            display: none;
+        }
+        .DeliveryContainer{
+            display: none;
+        }
+        .restaurants{
+            max-width: 400px;
+        }
+    
+        .mapContainer{
+            max-width: 400px;
+        }
+        .middle{
+            width: 100%;
+        }
+        .footer{
+            max-width: 500px;
+        }
+        .apple,.apples{
+            max-width: 100px;
+            height: 20px;
+        }
+        .sub{
+            width: 40%;
+            font-size: 0.5em;
+            height: 50%;
+        }
+        .submit{
+           
+            font-size: 0.5em;
+        }
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+ 
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 470px) {
+        .snaper{
+            max-width: 300px;
+            min-height: 400px;
+            align-items: center;
+        
+        }
+        .restaurants{
+            max-width: 400px;
+        }
+        .footer{
+            max-width: 500px;
+        }
+        .apple,.apples{
+        max-width: 50px;
+        height: 8vh;
+        }
+        .sub{
+            max-width: 50px;
+            font-size: 0.5em;
+        }
+        .middle{
+            max-width: 120px;
+            height: 200px;
+        }
+      
+        .get{
+            display: none;
+        }
+        .middlePart,.pages{
+            display: flex;
+            flex-direction: column;
+        }
+        .middlePart{
+            align-items: center;
+            gap: 10px;
+        }
+        .sub,.submit{
+            width: 100%;
+        }
+        .submit{
+            height: 10%;
+        }
+        .LastRow{
+            flex-direction: column;
+            align-items: center;
+        }
+        .policy{
+            display: none;
+        }
+
+     
+
+
+    }
+.cartDetails{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.basket{
+    background-color: green;
+    width: 16vw;
+}
+.checkoutButton{
+    background-color: green;
+
+}
+.sub{
+    color: #000;
+}
+.foods{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+.proceed{
+width: 17vw;
+margin-bottom: 1%;
+background-color: orange;
+   
+}

@@ -1,0 +1,405 @@
+.display{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+
+    
+}
+.header{
+    display: flex;
+    color: #000;
+    border: 1px solid transparent;
+    max-width: 100%;
+    width: 90vw;
+    gap: 20px;
+    
+
+   
+  
+  
+    justify-content: space-between;
+   
+
+    align-items: flex-end;
+
+    flex-direction: row;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    justify-content:space-between;
+
+
+    min-height: 100vh;
+
+
+color: #000;
+
+
+
+
+ 
+
+
+    
+
+
+
+
+   
+
+
+  
+    color: #000; 
+}
+.cart{
+    width: 300px;
+    height: 70px;
+    align-items: center;
+
+    gap: 0px;
+    opacity: 0px;
+    
+    border: 4px solid white;
+    background-color: green;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    border-radius: 10px;
+    opacity: 0px;
+  
+}
+.img{
+width: 10%;
+
+}
+ .checkout{
+        display: flex;
+        gap: 10px;
+      
+   
+        justify-content: space-between;
+  
+        max-width: 100%;
+        width:50vw;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 2em;
+    }
+    .details{
+        color: #000;
+        
+    }
+    .cartItem{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+
+    .orders{
+        position: absolute;
+    }
+.address{
+    text-decoration: underline;
+    color: orange;
+
+}
+
+.addressfield{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+
+   align-items: center;
+
+
+}
+.checkoutaddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+.addresshere{
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 3px solid ;
+    min-width: 120%;
+    margin-left: 30%;
+
+    border-radius: 40px;
+    
+
+   
+}
+.imagess{
+    margin-top: 1em;
+    border: 1px solid  black;
+    border-radius: 50%;
+    padding: 1px;
+    
+
+ 
+
+
+}
+.Payment{
+    margin-left: 30%;
+    background-color: orange;
+}
+.summary{
+    margin-left: 30%;
+    margin-bottom: 2em;
+    margin-top: auto;
+
+ 
+ 
+}
+.addresss{
+    text-decoration: underline;
+    color: orange;
+    
+
+
+}
+.mainbar {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    padding: auto;
+    flex-wrap: wrap;
+    padding: 1em;
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menuorders{
+
+    display: flex;
+    align-items: center; 
+    margin: 0 20px;
+    text-align: center;
+
+    white-space: nowrap; 
+
+}
+.uk{
+    transform: rotate(90deg);
+    background-color: orange;
+    
+
+}
+.userName{
+     Width:184px;
+     Height:61px;
+     display: flex;
+     align-items: center;     
+     border-radius: 120px;
+
+   
+    background: #03081F;
+    color: orange;
+
+}
+.cartitem{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: 1px solid;
+    min-height: 25vw;
+    border-radius:23px ;
+
+}
+.note{
+    margin-top: 40px;
+  width: 90%;
+  background-color: white;
+  color:black;
+  border-radius: 23px;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    
+}
+.mcdonals{
+
+    max-width: 180px;
+ 
+    height: auto; 
+
+ 
+    transition: all 0.3s ease;
+}
+.restaurants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction:column;
+    width: 100%;
+
+   
+    box-sizing: border-box;
+    align-self:flex-start ;
+ 
+    
+
+ 
+
+    justify-content: space-between;
+
+ 
+
+
+
+    flex-wrap: wrap;
+ 
+
+
+  
+
+  
+
+
+  
+    gap: 10px;
+
+}
+
+    
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+
+
+
+    
+
+.middlePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+    color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
+
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+}

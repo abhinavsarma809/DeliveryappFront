@@ -1,0 +1,870 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+    gap:20px;
+
+  
+    color: #000;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+
+    width: calc(100%-200px);
+    height: 70px;
+  
+    border: 1px solid transparent;
+    border-radius: 20px;
+    gap: 20px;
+ 
+    box-sizing: border-box;
+    color: #000;
+    background-color: white;
+    justify-content:space-between;
+    padding: 1em;
+    align-items: center;
+   
+}
+
+.locationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.locationInput input {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: azure;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.locationIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.changeButton, .saveButton, .addButton {
+    color: orange;
+    text-decoration: underline;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.basket {
+    max-width: 10%;
+}
+
+.cart {
+    border: 10px solid transparent;
+
+ 
+    background-color: green;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    border-radius: 10px;
+    opacity: 0.9;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.basket{
+    max-width: 20%;
+}
+
+.mainbar {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    padding: auto;
+    flex-wrap: wrap;
+    padding: 1em;
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.order{
+
+    display: flex;
+    flex-shrink: 1;
+ 
+    
+
+
+
+
+}
+
+
+.logsign{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+  
+}
+.Logout{
+    max-width: 70px;
+    font-size: small;
+
+    
+    border-radius: 30px;
+    flex-shrink: 0;
+    display: flex;
+   
+
+}
+.cartDetails{
+
+  display: flex;
+  flex-direction: column;
+  align-self:flex-end;
+
+
+
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    
+}
+.mcdonals{
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: 180px;
+ 
+    height: auto; 
+
+ 
+    transition: all 0.3s ease;
+}
+.menuorders{
+
+    display: flex;
+    align-items: center; 
+    margin: 0 20px;
+    text-align: center;
+
+    white-space: nowrap; 
+
+}
+.uk{
+    transform: rotate(90deg);
+    background-color: orange;
+    
+
+}
+
+.class,.class1{
+    margin: 0 15px; 
+    font-size: 1rem; 
+    border-radius: 30px; 
+    padding: 5px 10px; 
+
+   
+
+
+}
+.class{
+    background-color:orange}
+
+
+
+
+.user{
+    background-color: #000;
+    border: 3px solid transparent;
+    color: orange;
+    width: auto;
+    border-radius: 48px;
+    font-size: small;
+    white-space: nowrap;
+    flex: 0;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+    .mainbar{
+        font-size: small;
+    }
+
+
+.offers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+
+
+  
+    flex-wrap: wrap;
+    padding: 1em;
+  
+    white-space: normal;
+    box-sizing: border-box
+}
+.Pizza{
+    border: 3px solid orange;
+    border-radius:50px;
+    color: orange;
+    width: 10vw;
+
+    font-size: clamp(1em,1vw,3em) ;
+
+
+}
+.offerImages{
+    display: flex;
+
+
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;
+ 
+
+
+ 
+    box-sizing: border-box;
+
+    gap: 10px;
+
+    
+}
+.mainImages{
+
+
+
+    max-width: 400px;
+    height: auto; 
+
+    object-fit: cover; 
+    box-sizing: border-box;
+}
+.mains{
+    display: none;
+}
+.mainImage{
+    max-width: 100%;
+
+
+    height: auto; 
+
+    object-fit: cover; 
+    box-sizing: border-box;
+}
+
+
+@media screen and  (max-width:1300px){
+    .offerImages {
+        justify-content: flex-start;
+  
+ 
+    }
+
+    .mainImages {
+        max-width: 300px;
+    }
+    .offers{
+        flex-shrink: 1;
+    }
+
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.categoryImages{
+   max-width: 180px;
+}
+.restaurants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    flex-wrap: wrap;
+
+}
+.displayImages{
+    display: flex;
+  
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.displayImagess{
+    width: 80vw;
+}
+.DisplayImages{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    gap: 10px;
+
+
+}
+.DisplayImagess{
+
+    width: 50%;
+
+
+
+}
+.Knowabout{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+min-height: 500px;
+
+flex-grow: 1;
+background: #D9D9D9;
+
+
+}
+.bigContianer{
+    background-color: white;
+
+
+    gap: 10px;
+    align-items: center;
+    min-height: auto;
+    flex-wrap: wrap;
+  
+
+  
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+ 
+    
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    gap: 20px;
+    align-items: center;
+
+  
+
+
+
+}
+.support{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.PlaceOrder{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    max-width: calc(100%/6);
+    height: 20%;
+    margin:  10px ;
+    flex-wrap: wrap;
+
+    align-items: center;
+    padding: 10px;
+    font-size: 0.7em;
+   
+}
+.orderImages{
+    max-width: 30px;
+}
+.food{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    max-width: calc(100%/6);
+    height: 20%;
+
+    margin:  10px ;
+
+    align-items: center;
+    padding: 10px;
+    font-size: 0.7em;
+}
+.order1{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    max-width: calc(100%/6);
+    height: 20%;
+    margin:  20px ;
+
+    align-items: center;
+    padding: 10px;
+    font-size: 0.7em;
+}
+.foodImages{
+    max-width: 30px;
+}
+.order1Images{
+    max-width: 30px;
+}
+.contents{
+display: flex;
+flex-direction:row;
+position: relative;
+left: 10%;
+
+align-items: center;
+flex-wrap: wrap;
+
+
+
+
+}
+.tracking{
+    display: flex;
+    flex-direction: column;
+
+}
+.rows{
+    display: flex;
+    flex-direction: column;
+    
+
+    align-items: flex-start;
+    padding: 20px;
+}
+.h7{
+    background-color: orange;
+    border: 3px solid transparent;
+    border-radius: 30px;
+}
+.riders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:darkorange;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace ;
+    flex-grow: 1;
+
+
+}
+.riders1,.riders2,.riders3,.riders4{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction:column;
+
+    width:100%;
+    box-sizing: border-box;
+    
+
+ 
+
+    justify-content: space-between;
+
+ 
+
+
+
+    flex-wrap: wrap;
+ 
+
+
+  
+
+  
+
+
+  
+    gap: 10px;
+
+}
+
+    
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+@media screen and (max-width:456px){
+    
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction:column;
+
+    
+
+    justify-content: space-between;
+
+
+
+}
+.upperPart{
+    display: flex;
+    flex-direction:column ;
+    padding: auto;
+    flex-wrap: wrap;
+    padding: 1em;
+    align-items: center;
+
+
+   
+}
+
+    
+}
+.middlePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+    color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
+
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+}
+@media screen and (max-width:740px) {
+    .mainImage{
+        max-width: 500px;
+    }
+    .offers{
+        max-width: 600px;
+
+    }
+    .header{
+        max-width: 600px;
+    }
+    .mainbar{
+        max-width: 600px;
+ 
+    }
+    .category{
+        max-width: 600px;
+ 
+  
+  
+    }
+    .menu{
+        max-width: 600px;
+    }
+    .Knowabout{
+        max-width: 600px;
+    }
+    .riders{
+        max-width: 600px;
+    }
+    .footer{
+        max-width: 650px;
+        font-size: 0.5em;
+    }
+}
+.Pizza{
+height: 37px;
+font-size: 0.8em;
+}
+.offers{
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px) {
+    .offers{
+      max-width: 500px;
+    }
+    .menu{
+        max-width: 400px;
+    }
+    .mainbar{
+        max-width: 410px;
+        font-size: 0.9em;
+    }
+    .header{
+        max-width: 400px;
+        font-size: 0.8em;
+    }
+    .mainImage{
+        max-width: 400px;
+    }
+    .DisplayImagess{
+        max-width: 250px;
+    }
+    .Knowabout{
+        max-width: 500px;
+    }
+    .riders{
+        max-width: 500px;
+    }
+    .footer{
+        max-width: 500px;
+    }
+    .apple,.apples{
+        max-width: 50px;
+        max-height: 20px;
+    }
+    .sub{
+        max-width: 100px;
+
+    }
+    .copyright{
+        max-width: 500px;
+        font-size: 0.7em;
+    }
+}
+@media screen and  (max-width:480px){
+    .orders{
+  display: none;
+    }
+    .categories,.menu,.category{
+        align-items: center;
+       
+        
+    }
+    .mcdonals{
+        align-items: center;
+    }
+    .class,.class1{
+        display: none;
+    }
+    .mainbar{
+        max-width: 300px;
+        flex-wrap: nowrap;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+      
+    }
+    .footers{
+        display: none;
+    }
+    .mainImage{
+        display: none;
+    }
+    .mains{
+        display: block;
+        max-width: 100px;
+    }
+  
+  
+
+    .logreverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nadumu,.vegan{
+        display: none;
+    }
+    .Pizza{
+       font-size: 1em;
+       width: 100px;
+      display: flex;
+       align-items: center;
+
+  
+    }
+    .DisplayImages{
+        flex-direction: column;
+        align-items: center;
+    }
+    .questions{
+        display: none;
+    }
+    .Knowabout{
+        background-color: white;
+        align-items: center;
+
+    }
+    .bigContianer{
+        align-items: center;
+        flex-direction: column;
+    }
+    .contents{
+        flex-direction: column;
+        background: #03081F;
+        max-width: 300px;
+
+        
+    
+    }
+    .PlaceOrder,.food,.order1{
+        max-width: 100px;
+        max-height: 200px;
+        border-radius: 23px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .upperPart,.middlePart{
+        flex-direction: column;
+        align-items: center;
+    }
+    .get{
+        display: none;
+       
+    }
+    .apple{
+        margin-bottom: 5em;
+      
+
+
+  
+  
+    }
+    .sub{
+        max-width:100px;
+        height: 20px;
+        font-size: 1em;
+    }
+    .submit{
+       max-height: 20px;
+      margin-bottom: 5em;
+  
+    }
+.LastRow{
+    flex-direction: column;
+}
+
+  
+}
