@@ -1,5 +1,5 @@
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL.replace(/\/$/, "")||'https://backend-qj3h.vercel.app'
+const BACKEND_URL = 'https://backend-qj3h.vercel.app'
 
 
  
