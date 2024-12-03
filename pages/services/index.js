@@ -1,6 +1,6 @@
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL.replace(/\/$/, "")
 
-const BACKEND_URL =  "https://backend-dzra.vercel.app".replace(/\/$/,"");;
 
  
 
