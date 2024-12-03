@@ -7,9 +7,7 @@ import face from '../../src/assets/Facebook.png';
 import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
-import mains from '../../src/assets/mobileImage.jpeg';
-import icon from '../../src/assets/icon.png'
-import wallet from '../../src/assets/Vector2 - Copy.png'
+
 import green from '../../src/assets/green.png'
 import StyleSheet from './payment.module.css'
 import images from "../../src/assets/Location.png";
