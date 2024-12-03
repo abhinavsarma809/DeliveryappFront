@@ -10,7 +10,7 @@ import burger from "../../src/assets/Burger.png";
 import Fries from "../../src/assets/French Fries.png";
 import Shakes from "../../src/assets/Shakes.png";
 import Locationss from "../../src/assets/Location.png";
-import clock from "../../src/assets/clock.png";
+
 import id from "../../src/assets/ID.png";
 import reviews from "../../src/assets/reviews.jpeg";
 import brand from '../../src/assets/Vector.png';
@@ -354,7 +354,7 @@ const Product = () => {
 
 </div>
 <div className={StyleSheet.DeliveryContainer3}>
-<h5><img src={clock}/> Operational Times</h5>
+<h5>Operational Times</h5>
                     <p>Monday:8:00 AM 3:00 AM</p>
                     <p>Tuesday: 8:00 AM 3:00 AM </p>
                     <p>Wednesday: 8:00 AM 3:00 AM</p>
