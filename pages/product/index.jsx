@@ -20,6 +20,8 @@ import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
 import mains from '../../src/assets/mobileImage.jpeg';
+import menur from '../../src/assets/menu.png';
+
 
 
 
@@ -118,6 +120,8 @@ const Product = () => {
                     <img src={images} className={StyleSheet.img} alt="Cart" />
                     My Cart
                 </p>
+                {userName && <p className={StyleSheet.user1} onClick={()=>navigate('/details')}>Hello, {userName}</p>} 
+                
             </div>
             <div className={StyleSheet.mainbar}>
                 <div className={StyleSheet.menuorders}>
@@ -126,6 +130,7 @@ const Product = () => {
                 <h1 className={StyleSheet.uk}>uk.</h1>
            
                 </div>
+                <img  src ={menur} className={StyleSheet.menur}/>
                 
                 <h4 className={StyleSheet.class}>Home</h4>
                 <p className={StyleSheet.class1}>specials offers</p>
@@ -174,6 +179,8 @@ const Product = () => {
         ))
     }
     {dis && (
+        <>
+        <div className={StyleSheet.overlay}>
                 <div className={StyleSheet.cartDetails}>
                     
                       
@@ -186,9 +193,9 @@ const Product = () => {
                         <>
                             {cart.map((item, index) => (
                                 <div key={index} className={StyleSheet.cartItem}>
-                                    <h4>{item.title}</h4>
-                                    <p>{item.description}</p>
-                                    <p>Price: ₹{item.price}</p> 
+                                    <h4 className={StyleSheet.title}>{item.title}</h4>
+                                    <p className={StyleSheet.title}>{item.description}</p>
+                                    <p className={StyleSheet.title}>Price: ₹{item.price}</p> 
                                     <span className={StyleSheet.remove} onClick={() => handleCartRemove(item)}>
                                         <img src={remove} alt="Remove" />
                                     </span>
@@ -198,13 +205,15 @@ const Product = () => {
                             <p>sub total:  {subTotal}</p>
                             <p>Discounts : -₹3.00 </p>
                             <p>Delivery Fee : ₹3.00</p>
-                            <button onClick={()=>navigate('/payment')} className={StyleSheet.proceed}> Total Payment: {subTotal} </button>
+                            <button onClick={()=>navigate('/payment',{state:{cart}})} className={StyleSheet.proceed}> Total Payment: {subTotal} </button>
                             <button className={StyleSheet.checkoutButton} onClick={() => navigate("/check", { state: { cart,location,userName} })}>Checkout</button>
                         </>
                     ) : (
                         <p>Your cart is empty</p>
                     )}
                 </div>
+                </div>
+                </>
             )}
 
 </div>
@@ -401,7 +410,7 @@ const Product = () => {
                     ))}
                 </div>
             </div>
-
+           <div className={StyleSheet.footerContainer}>
             <div className={StyleSheet.footer}>
                 <div className={StyleSheet.upperPart}>
                     <div className={StyleSheet.Uks}>
@@ -466,7 +475,7 @@ const Product = () => {
                 <p className={StyleSheet.policy}>Do not Sell or Share my personal Information</p>
 
             </div>
-          
+            </div>
 
         </div>
     );

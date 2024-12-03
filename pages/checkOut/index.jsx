@@ -13,7 +13,7 @@ import face from '../../src/assets/Facebook.png';
 import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
-import mains from '../../src/assets/mobileImage.jpeg';
+
 
 
 const Check = () => {
@@ -63,7 +63,7 @@ const Check = () => {
   return (
     <div className={StyleSheet.container}>
       <div className={StyleSheet.header}>
-        <h4>Get 60% off on your first order, Promo: Orders</h4>
+        <h4 className={StyleSheet.promo}>Get 60% off on your first order, Promo: Orders</h4>
         {address && <p className={StyleSheet.address}><img src={image} /> {address}</p>}
         
        
@@ -85,7 +85,7 @@ const Check = () => {
                 <p className={StyleSheet.class1}>specials offers</p>
                 <p className={StyleSheet.class1}>Restaurants</p>
                 <p className={StyleSheet.class1}>Track Order</p>
-                {userName && <p className={StyleSheet.userName} onClick={()=>navigate('/details')}><img src={male}/>Hello, {userName}</p>} 
+                {userName && <p className={StyleSheet.user} onClick={()=>navigate('/details')}><img src={male}/>Hello, {userName}</p>} 
         
       </div>
 
@@ -126,7 +126,7 @@ const Check = () => {
             <h5>Sales Tax: ₹{salesTax}</h5>
             <h5>Subtotal: ₹{subtotal}</h5>
           </div><br/>
-          <button className={StyleSheet.Payment} onClick={()=>navigate('/payment')}>Choose Payment Method</button>
+          <button className={StyleSheet.Payment} onClick={()=>navigate('/payment',{state:{address,cart}})}>Choose Payment Method</button>
          
 
       
@@ -153,6 +153,7 @@ const Check = () => {
                     ))}
                 </div>
             </div>
+            <div className={StyleSheet.footerContainer}>
             <div className={StyleSheet.footer}>
                 <div className={StyleSheet.upperPart}>
                     <div className={StyleSheet.Uks}>
@@ -217,7 +218,7 @@ const Check = () => {
                 <p>Do not Sell or Share my personal Information</p>
 
             </div>
-          
+            </div>
 
 
         </div>

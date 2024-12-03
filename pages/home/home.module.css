@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1; 
+
+ 
     gap:20px;
 
   
@@ -13,9 +14,11 @@
 .header {
     display: flex;
     flex-direction: row;
+  
+ 
 
 
-    width: calc(100%-200px);
+    width: 100%;
     height: 70px;
   
     border: 1px solid transparent;
@@ -26,7 +29,7 @@
     color: #000;
     background-color: white;
     justify-content:space-between;
-    padding: 1em;
+    padding: 0  1em;
     align-items: center;
    
 }
@@ -66,6 +69,9 @@
     border-radius: 5px;
     font-size: 14px;
 }
+.Knowabout{
+    font-family: Poppins;
+}
 
 .basket {
     max-width: 10%;
@@ -73,20 +79,21 @@
 
 .cart {
     border: 10px solid transparent;
+ 
 
  
     background-color: green;
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
+    align-items: flex-start- ;
     padding: 0 2em;
     border-radius: 10px;
     opacity: 0.9;
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;
-    max-width: 100px;
-    flex-grow: 1;
+
+
     justify-content: flex-end;
 }
 .basket{
@@ -158,6 +165,7 @@
 
 
 
+
 }
 .menu{
     display: flex;
@@ -224,6 +232,9 @@
 
 
 }
+.userName{
+    display: none;
+}
 
     .mainbar{
         font-size: small;
@@ -261,8 +272,10 @@
 
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0 1em;
+    max-width: 1000px;
     flex-wrap: wrap;
+    
  
 
 
@@ -277,7 +290,7 @@
 
 
 
-    max-width: 400px;
+    max-width: 300px;
     height: auto; 
 
     object-fit: cover; 
@@ -294,6 +307,10 @@
 
     object-fit: cover; 
     box-sizing: border-box;
+}
+.basket{
+    color:white;
+ 
 }
 
 
@@ -347,6 +364,8 @@
 
 .displayImagess{
     width: 80vw;
+ display: flex;
+
 }
 .DisplayImages{
     display: flex;
@@ -382,7 +401,7 @@ background: #D9D9D9;
     gap: 10px;
     align-items: center;
     min-height: auto;
-    flex-wrap: wrap;
+
   
 
   
@@ -499,8 +518,11 @@ flex-wrap: wrap;
     justify-content: space-between;
     background-color:darkorange;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace ;
-    flex-grow: 1;
+    padding: 0 2em;
+
+   
+
+    color: white;
 
 
 }
@@ -509,43 +531,305 @@ flex-wrap: wrap;
     flex-direction: column;
 }
 
+
+
+@media screen and (max-width:741px) {
+    .mainImage{
+        max-width: 500px;
+    }
+    .offers{
+        max-width: 600px;
+
+    }
+    .header{
+        max-width: 600px;
+    }
+    .mainbar{
+        max-width: 600px;
+ 
+    }
+    .category{
+        max-width: 600px;
+ 
+  
+  
+    }
+    .menu{
+        max-width: 600px;
+    }
+    .Knowabout{
+        max-width: 600px;
+    }
+    .riders{
+        max-width: 600px;
+    }
+    .footer{
+        width:100% ;
+        padding: 0 5em;
+       
+
+        font-size: 0.5em;
+    }
+    .apple,.apples{
+ 
+    }
+}
+.Pizza{
+height: 37px;
+font-size: 0.8em;
+}
+.offers{
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px) {
+    .offers{
+      max-width: 500px;
+      padding:0 em ;
+    }
+    .Knowabout{
+        font-size: 0.5em;
+    }
+    .menu{
+        max-width: 400px;
+    }
+    .mainbar{
+        max-width: 410px;
+        font-size: 0.9em;
+    }
+    .header{
+        max-width: 500px;
+        font-size: 0.8em;
+    }
+    .mainImage{
+      width: 100%;
+    }
+    .DisplayImagess{
+        max-width: 250px;
+    }
+    .Knowabout{
+        max-width: 500px;
+    }
+    .riders{
+        max-width: 500px;
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+      
+     
+       
+    }
+    .apple,.apples{
+        width: 50px;
+        height: 30px;
+    }
+    .sub,.submit{
+    
+      font-size: 0.7em;
+      max-height:30%;
+       
+
+    }
+    .copyright{
+        width: 100%;
+        font-size: 0.7em;
+    }
+    .middlePart{
+        padding: 0 3em;
+    }
+    .upperPart{
+      
+        margin-right: 10%;
+      
+       
+    }
+    .orders{
+        font: 0.9em sans-serif;
+   
+    }
+  
+}
+@media screen and  (max-width:480px){
+    .orders{
+  display: none;
+    }
+    .categories,.menu,.category{
+        align-items: center;
+       
+        
+    }
+    .mcdonals{
+        align-items: center;
+    }
+    .class,.class1{
+        display: none;
+    }
+    .mainbar{
+        max-width: 300px;
+        flex-wrap: nowrap;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+      
+    }
+    
+    
+    .mainImage{
+        display: none;
+    }
+    .mains{
+        display: block;
+        max-width: 100px;
+    }
+  
+  
+
+    .logreverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nadumu,.vegan{
+        display: none;
+    }
+    .Pizza{
+       font-size: 1em;
+       width: 100px;
+      display: flex;
+       align-items: center;
+
+  
+    }
+    .DisplayImages{
+        flex-direction: column;
+       
+      
+    }
+    .questions{
+        display: none;
+    }
+    .Knowabout{
+        background-color: white;
+        align-items: flex-start;
+       
+    
+    }
+    .bigContianer{
+        align-self: flex-start;
+        flex-direction: column;
+    }
+    .contents{
+        flex-direction: column;
+        background: #03081F;
+        max-width: 300px;
+
+        
+    
+    }
+    .PlaceOrder,.food,.order1{
+        max-width: 100px;
+        max-height: 200px;
+        border-radius: 23px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .get{
+        display: none;
+       
+    }
+    .apple{
+        margin-bottom: 5em;
+      
+
+   
+  
+    }
+    .sub{
+        max-width:100px;
+        height: 20px;
+        font-size: 1em;
+    }
+    .submit{
+       max-height: 20px;
+      margin-bottom: 5em;
+  
+    }
+    .middlePart{
+        display: flex;
+        flex-direction: column;
+     
+    }
+.LastRow{
+    flex-direction: column;
+}
+.menu{
+    display: block;
+}
+.Logout{
+    display: none;
+}
+
+  
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+   
+    
+}
+
 .footer{
+ 
     display: flex;
     background: #D9D9D9;
-    flex-direction:column;
-
-    width:100%;
+    flex-direction: column;
+    width: 100vw; /* Ensure it spans the entire viewport width */
+    padding: 0; /* Remove horizontal padding */
     box-sizing: border-box;
-    
-
- 
-
     justify-content: space-between;
-
- 
-
-
-
-    flex-wrap: wrap;
- 
-
-
-  
-
-  
-
-
-  
     gap: 10px;
+    position: relative;
+    right: 12%;
+    padding: 0 5em;
+
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
 
 }
 
-    
+
 .upperPart{
     display: flex;
     flex-direction: row;
 
-    flex-wrap: nowrap;
     padding: 2em;
 
     
@@ -575,34 +859,11 @@ flex-wrap: wrap;
     background-color: grey;
     transform: rotate(90deg);
 }
-@media screen and (max-width:456px){
-    
-.footer{
-    display: flex;
-    background: #D9D9D9;
-    flex-direction:column;
+
+
 
     
 
-    justify-content: space-between;
-
-
-
-}
-.upperPart{
-    display: flex;
-    flex-direction:column ;
-    padding: auto;
-    flex-wrap: wrap;
-    padding: 1em;
-    align-items: center;
-
-
-   
-}
-
-    
-}
 .middlePart{
     display: flex;
     flex-direction: row;
@@ -636,6 +897,10 @@ flex-wrap: wrap;
     border-radius: 20px;
    height: 7vh;
 }
+.menur{
+    display: none;
+}
+
 .submit{
     height: 6vh;
     color:beige;
@@ -663,208 +928,126 @@ flex-wrap: wrap;
     background: #03081F;
     color: white;
     justify-content: space-between;
+    padding: 0 10em;
 }
-@media screen and (max-width:740px) {
-    .mainImage{
-        max-width: 500px;
-    }
-    .offers{
-        max-width: 600px;
 
-    }
-    .header{
-        max-width: 600px;
-    }
-    .mainbar{
-        max-width: 600px;
- 
-    }
-    .category{
-        max-width: 600px;
- 
-  
-  
-    }
-    .menu{
-        max-width: 600px;
-    }
-    .Knowabout{
-        max-width: 600px;
-    }
-    .riders{
-        max-width: 600px;
-    }
+@media screen  and (max-width: 1300px) {
     .footer{
-        max-width: 650px;
-        font-size: 0.5em;
-    }
-}
-.Pizza{
-height: 37px;
-font-size: 0.8em;
-}
-.offers{
-    font-size: 0.7em;
-}
-
-@media screen and (max-width: 600px) {
-    .offers{
-      max-width: 500px;
-    }
-    .menu{
-        max-width: 400px;
-    }
-    .mainbar{
-        max-width: 410px;
-        font-size: 0.9em;
-    }
-    .header{
-        max-width: 400px;
-        font-size: 0.8em;
-    }
-    .mainImage{
-        max-width: 400px;
-    }
-    .DisplayImagess{
-        max-width: 250px;
-    }
-    .Knowabout{
-        max-width: 500px;
-    }
-    .riders{
-        max-width: 500px;
-    }
-    .footer{
-        max-width: 500px;
-    }
-    .apple,.apples{
-        max-width: 50px;
-        max-height: 20px;
-    }
-    .sub{
-        max-width: 100px;
-
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw; /* Ensure it spans the entire viewport width */
+        padding: 0; /* Remove horizontal padding */
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
     }
     .copyright{
-        max-width: 500px;
-        font-size: 0.7em;
-    }
-}
-@media screen and  (max-width:480px){
-    .orders{
-  display: none;
-    }
-    .categories,.menu,.category{
-        align-items: center;
-       
-        
-    }
-    .mcdonals{
-        align-items: center;
-    }
-    .class,.class1{
-        display: none;
-    }
-    .mainbar{
-        max-width: 300px;
-        flex-wrap: nowrap;
-    }
-    .reverse{
         display: flex;
-        flex-direction: column-reverse;
-      
-    }
-    .footers{
-        display: none;
-    }
-    .mainImage{
-        display: none;
-    }
-    .mains{
-        display: block;
-        max-width: 100px;
-    }
-  
-  
-
-    .logreverse{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .nadumu,.vegan{
-        display: none;
-    }
-    .Pizza{
-       font-size: 1em;
-       width: 100px;
-      display: flex;
-       align-items: center;
-
-  
-    }
-    .DisplayImages{
-        flex-direction: column;
-        align-items: center;
-    }
-    .questions{
-        display: none;
-    }
-    .Knowabout{
-        background-color: white;
-        align-items: center;
-
-    }
-    .bigContianer{
-        align-items: center;
-        flex-direction: column;
-    }
-    .contents{
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         background: #03081F;
-        max-width: 300px;
-
-        
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
     
     }
-    .PlaceOrder,.food,.order1{
-        max-width: 100px;
-        max-height: 200px;
-        border-radius: 23px;
+    .header{
+        padding: 0 5em;
     }
+    .mainbar{
+        padding: 0 2em;
+    }
+    .mainImage,.offers{
+        padding: 0 5em;
+    }
+    .menu{
+        padding: 0 4em;
+    }
+    .category{
+        padding: 0 4em;
+    }
+    .DisplayImages{
+        padding: 0 4em;
+    }
+    .Knowabout{
+        padding: 0 5em;
+        margin: 0 5em;
+    }
+    .riders{
+        padding: 0 4em;
+    }
+}
+
+
+@media screen and (max-width:500px){
     .footer{
+        display: flex;
         flex-direction: column;
         align-items: center;
-       
     }
-    .upperPart,.middlePart{
+   
+    .menuorders{
+      font-size: 0.63em;
+    }
+ 
+    .middlePart{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .LastRow{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub{
+       max-height: 20px;
+    }
+    .submit{
+        max-height: 20px;
     }
     .get{
         display: none;
-       
-    }
-    .apple{
-        margin-bottom: 5em;
-      
 
+    }
+    .vegan,.nadumu{
+        display: none;
+    }
+    .offers{
+        padding: 0 5em;
+    }
+    .user{
+        display: none;
 
-  
-  
     }
-    .sub{
-        max-width:100px;
-        height: 20px;
-        font-size: 1em;
+    .userName{
+        display: block;
+        background-color: #000;
+        border: 3px solid transparent;
+        color: orange;
+        width: auto;
+        border-radius: 48px;
+        font-size: small;
+        white-space: nowrap;
+        flex: 0;
+        cursor: pointer;
+        font-weight: bold;
     }
-    .submit{
-       max-height: 20px;
-      margin-bottom: 5em;
   
+    .class,.class1,.orders,.mainImage{
+        display: none;
     }
-.LastRow{
-    flex-direction: column;
+    .menur{
+        display: block;
+    }
+    .Logout{
+        display: none;
+    }
+   
 }
 
-  
-}
+

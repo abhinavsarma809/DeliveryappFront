@@ -195,6 +195,7 @@ width: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 1em;
 }
 .menuorders{
 
@@ -268,41 +269,46 @@ width: 10%;
     gap: 20px;
     margin-bottom: 5%;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+}
+
 .footer{
     display: flex;
     background: #D9D9D9;
-    flex-direction:column;
-    width: 100%;
-
-   
+    flex-direction: column;
+    width: 100vw; 
+    padding: 0; 
     box-sizing: border-box;
-    align-self:flex-start ;
- 
-    
-
- 
-
     justify-content: space-between;
-
- 
-
-
-
-    flex-wrap: wrap;
- 
-
-
-  
-
-  
-
-
-  
     gap: 10px;
+    position: relative;
+    right: 12%;
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
 
 }
 
-    
+.footerContainer{
+    width: 100%;
+}
 .upperPart{
     display: flex;
     flex-direction: row;
@@ -402,4 +408,148 @@ width: 10%;
     background: #03081F;
     color: white;
     justify-content: space-between;
+    padding: 0 10em;
 }
+@media  screen and (max-width: 736px) {
+    .restaurants{
+        max-width: 300px;
+    }
+    .mainbar{
+        max-width: 500px;
+    }
+    .addressfield{
+        max-width: 100px;
+    }
+
+    .apple,.apples{
+        max-width: 50px;
+        height: 10px;
+        
+    }
+ 
+    
+}
+
+@media screen  and (max-width: 1300px) {
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0; 
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
+    }
+    .mainbar{
+        padding: 0 5em;
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
+    
+    }
+}
+@media screen and (max-width: 590px) {
+    .snaper{
+        max-width: 300px;
+        min-height: 400px;
+        align-items: center;
+    
+    }
+    .restaurants{
+        max-width: 100px;
+    }
+    .footer{
+        max-width: 600px;
+    }
+    .apple,.apples{
+    max-width: 50px;
+    height: 10vh;
+    }
+    .sub{
+        max-width: 50px;
+        font-size: 0.5em;
+    }
+    .middle{
+        max-width: 120px;
+        height: 200px;
+    }
+  
+    .get{
+        display: none;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .policy{
+        display: none;
+    }
+    .cartDetails {
+   display: none;
+ 
+ 
+    }
+    .addressfield{
+        max-width: 50px;
+
+    }
+    .addresshere{
+        max-width: 200px;
+        font-size: 0.5em;
+    }
+    .class1{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+
+
+ 
+
+
+}
+
+.user{
+    background-color: #000;
+    border: 3px solid transparent;
+    color: orange;
+    width: auto;
+    border-radius: 48px;
+    font-size: small;
+    white-space: nowrap;
+    flex: 0;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+
+    

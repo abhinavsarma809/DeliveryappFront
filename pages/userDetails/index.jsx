@@ -1,8 +1,22 @@
 import React, { useEffect, useState } from "react";
 import StyleSheet from "./details.module.css";
-import { updateUser } from "../services/index"; // Import the update API function
-
+import { useLocation } from "react-router-dom";
+import image from "../../src/assets/Location.png";
+import images from "../../src/assets/Basket.png";
+import menu from "../../src/assets/Menu.png";
+import { updateUser } from "../services/index"; 
+import brand from '../../src/assets/Vector.png';
+import group from '../../src/assets/Group.png';
+import face from '../../src/assets/Facebook.png';
+import insta from '../../src/assets/Instagram.png';
+import snap from '../../src/assets/snap.png';
+import twitter  from '../../src/assets/twitter.png';
+import mains from '../../src/assets/mobileImage.jpeg';
+import male from "../../src/assets/Male User.png";
 const Details = () => {
+  const locate = useLocation();
+  const userName = locate.state?.userName||[];
+  const address = locate.state?.location ||[];
   const [userDetails, setUserDetails] = useState({
     userName: "",
     email: "",
@@ -78,14 +92,70 @@ const Details = () => {
     setCardDetails({ cardNumber: "", expiry: "", cvv: "" });
     setEditCardIndex(null);
     setDisplayCardDialog(false);
+    
   };
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); 
+ 
+    localStorage.setItem("userName", userDetails.userName);
+    localStorage.setItem("email", userDetails.email);
+    localStorage.setItem("gender", userDetails.gender);
+    localStorage.setItem("country", userDetails.country);
+  
+
+    setEditMode(false);
+  };
+  
 
   return (
     <div className={StyleSheet.container}>
-      <h1 className={StyleSheet.heading}>User Details</h1>
+        <div className={StyleSheet.rowing}>
+      <div className={StyleSheet.header}>
+        <h4 className={StyleSheet.promo}>Get 60% off on your first order, Promo: Orders</h4>
+        {address && <p className={StyleSheet.address}><img src={image} /> {address}</p>}
+        
+       
+        <p className={StyleSheet.cart}>
+          <img src={images} className={StyleSheet.img} alt="Cart" />
+          My
+           Cart
+        </p>
+        {userName && <p className={StyleSheet.userName} onClick={()=>navigate('/details')}><img src={male}/>Hello, {userName}</p>} 
+      </div>
+      <div className={StyleSheet.mainbar}>
+                <div className={StyleSheet.menuorders}>
+                <h1 className={StyleSheet.order}>Order</h1>
+                <h1 className={StyleSheet.uk}>uk.</h1>
+           
+                </div>
+                <div className={StyleSheet.menu}>
+                  <img src={menu}/>
+                </div>
+                
+                <h4 className={StyleSheet.class}>Home</h4>
+                <h4 className={StyleSheet.class1}>Browser Menu</h4>
+                <p className={StyleSheet.class1}>specials offers</p>
+                <p className={StyleSheet.class1}>Restaurants</p>
+                <p className={StyleSheet.class1}>Track Order</p>
+                {userName && <p className={StyleSheet.user} onClick={()=>navigate('/details')}><img src={male}/>Hello, {userName}</p>} 
+        
+      </div>
+      </div >
+      
       <div className={StyleSheet.detailsContainer}>
+      <h1 className={StyleSheet.heading}>&larr; My  Profile</h1>
+      <div className={StyleSheet.mainSea}>     
+        <p>{userDetails.userName}</p>
+      <button
+              onClick={() => setEditMode(true)}
+              className={StyleSheet.edit}
+            >
+              Edit
+            </button>
+            </div>
+ 
         {editMode ? (
-          <form>
+          <form className={StyleSheet.form} onSubmit={handleFormSubmit}>
             <div>
               <label>Name:</label>
               <input
@@ -94,6 +164,7 @@ const Details = () => {
                 value={userDetails.userName}
                 onChange={handleChange}
                 required
+                className={StyleSheet.editName}
               />
             </div>
             <div>
@@ -104,6 +175,7 @@ const Details = () => {
                 value={userDetails.email}
                 onChange={handleChange}
                 required
+                className={StyleSheet.editName}
               />
             </div>
             <div>
@@ -113,6 +185,7 @@ const Details = () => {
                 value={userDetails.gender}
                 onChange={handleChange}
                 required
+                className={StyleSheet.editName}
               >
                 <option value="" disabled>
                   Select Gender
@@ -120,6 +193,7 @@ const Details = () => {
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
+                className={StyleSheet.editName}
               </select>
             </div>
             <div>
@@ -130,37 +204,44 @@ const Details = () => {
                 value={userDetails.country}
                 onChange={handleChange}
                 required
+                className={StyleSheet.editName}
               />
             </div>
-            <button type="submit">Save</button>
-            <button type="button" onClick={() => setEditMode(false)}>
+         
+            <button type="submit" className={StyleSheet.Removal}>Save</button>
+            <button type="button" onClick={() => setEditMode(false)} className={StyleSheet.Removal}>
               Cancel
             </button>
+      
           </form>
         ) : (
           <>
+          <div className={StyleSheet.name}>
+            
+       
             <div className={StyleSheet.names}>
               <p>
-                <strong>Name:</strong> {userDetails.userName}
+                <strong>Name:</strong> <br/>
+                <p className={StyleSheet.usernames}>{userDetails.userName}</p>
               </p>
               <p>
-                <strong>Email:</strong> {userDetails.email}
+                <strong>Email:</strong>  <br/>
+                <p className={StyleSheet.usernames}>{userDetails.email}</p>
               </p>
             </div>
             <div className={StyleSheet.gender}>
               <p>
-                <strong>Gender:</strong> {userDetails.gender}
+                <strong>Gender:</strong>  <br/>
+                <p className={StyleSheet.usernames}>{userDetails.gender}</p> 
               </p>
               <p>
-                <strong>Country:</strong> {userDetails.country}
+                <strong>Country:</strong>  <br/>
+                
+                <p className={StyleSheet.usernames}>{userDetails.country}</p>
               </p>
             </div>
-            <button
-              onClick={() => setEditMode(true)}
-              className={StyleSheet.edit}
-            >
-              Edit
-            </button>
+          
+            </div>
           </>
         )}
       </div>
@@ -197,7 +278,7 @@ const Details = () => {
       {displayCardDialog && (
         <div className={StyleSheet.cardDialog}>
           <div className={StyleSheet.cardDialogHeader}>
-          <h1>{editCardIndex !== null ? "Edit Card Payments" : "Add New Card"}</h1>
+          <h5>{editCardIndex !== null ? "Edit Card Payments" : "Add New Card"}</h5>
           <div   className={StyleSheet.cardNumber}>
             <label>Card Number:</label>
         
@@ -244,9 +325,77 @@ const Details = () => {
       
   
           </div>
+          
         </div>
       )}
+      <div className={StyleSheet.footerContainer}>
+       <div className={StyleSheet.footer}>
+                <div className={StyleSheet.upperPart}>
+                    <div className={StyleSheet.Uks}>
+                    <h1 className={StyleSheet.h2}>Order</h1>
+                    <p className={StyleSheet.Uk}>UK.</p>
+                    </div>
+                    <p className={StyleSheet.get}>Get Exclusive Deals in your Inbox</p>
+                    <p className={StyleSheet.get}>Legal Pages</p>
+                    <p className={StyleSheet.get}>Important Links</p>
+                    
+
+                </div>
+              <div className={StyleSheet.middlePart}>
+                    <div className={StyleSheet.brands}>
+                    <img src={brand} className={StyleSheet.apple} />
+                    <img src={group} className={StyleSheet.apples} />
+
+                    </div>
+         <div className={StyleSheet.social}>
+         <input type='search' className={StyleSheet.sub} placeholder='Your email@gmail.com' />
+         <button className={StyleSheet.submit}>Subscribe</button>
+
+         </div>
+         <div className={StyleSheet.pages}>
+          <a href='/' className={StyleSheet.Terms}>Terms and Conditions</a>
+          <a href='/' className={StyleSheet.privacy}>Privacy</a>
+          <a href='/' className={StyleSheet.refund}>Cookies</a>
+          <a href='/' className={StyleSheet.refunds}>Modern Slavery Statement</a>
+        </div>
+                
+       <div className={StyleSheet.pages}>
+          <a href='/' className={StyleSheet.Terms1}>Get help</a>
+          <a href='/' className={StyleSheet.privacy2}>Add your restaurant</a>
+          <a href='/' className={StyleSheet.refund3}>Sign up to deliver</a>
+          <a href='/' className={StyleSheet.refunds3}>Create a Business account</a>
+        </div>
+       
+                    
+           
+     
+                    
+
+                </div>
+                <div className={StyleSheet.LastRow}>
+                    <p>Company # 490039-445, Registered with House of companies.</p>
+                    <div className={StyleSheet.socialMedia}>
+                    <a href='/'><img src={insta}/></a>
+                    <a href='/'><img src={face}/></a>
+                    <a href='/'><img src={snap}/></a>
+                    <a href='/'><img src={twitter}/></a>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div className={StyleSheet.copyright}>
+                <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <p>Pricing</p>
+                <p>Do not Sell or Share my personal Information</p>
+
+            </div>
+            </div>
     </div>
+    
   );
 };
 

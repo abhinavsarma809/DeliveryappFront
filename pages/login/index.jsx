@@ -136,22 +136,72 @@ const Login = () => {
           )}
         </div>
       </div>
+      <div className={StyleSheet.footerContainer}>
       <div className={StyleSheet.footer}>
-        <h1 className={StyleSheet.order}>Order</h1>
-        <h2 className={StyleSheet.navu}>kU.</h2>
-        <h3 className={StyleSheet.deals}>Get Exclusive Deals in Your Inbox</h3>
-        <h3 className={StyleSheet.legal}>Legal Pages</h3>
-        <h3 className={StyleSheet.legal}>Important Links</h3>
-        <img src={brand} className={StyleSheet.apple} />
-        <img src={group} className={StyleSheet.apples} />
-        <input type='search' className={StyleSheet.sub} placeholder='Your email@gmail.com' />
-        <button className={StyleSheet.submit}>Subscribe</button>
-        <div className={StyleSheet.pages}>
+                <div className={StyleSheet.upperPart}>
+                    <div className={StyleSheet.Uks}>
+                    <h1 className={StyleSheet.kapu}>Order</h1>
+                    <p className={StyleSheet.Uk}>UK.</p>
+                    </div>
+                    <p className={StyleSheet.get}>Get Exclusive Deals in your Inbox</p>
+                    <p className={StyleSheet.get}>Legal Pages</p>
+                    <p className={StyleSheet.get}>Important Links</p>
+                    
+
+                </div>
+              <div className={StyleSheet.middlePart}>
+                    <div className={StyleSheet.brands}>
+                    <img src={brand} className={StyleSheet.apple} />
+                    <img src={group} className={StyleSheet.apples} />
+
+                    </div>
+         <div className={StyleSheet.social}>
+         <input type='search' className={StyleSheet.sub} placeholder='Your email@gmail.com' />
+         <button className={StyleSheet.submit}>Subscribe</button>
+
+         </div>
+         <div className={StyleSheet.pages}>
           <a href='/' className={StyleSheet.Terms}>Terms and Conditions</a>
           <a href='/' className={StyleSheet.privacy}>Privacy</a>
-          <a href='/' className={StyleSheet.refund}>Refund</a>
+          <a href='/' className={StyleSheet.refund}>Cookies</a>
+          <a href='/' className={StyleSheet.refunds}>Modern Slavery Statement</a>
         </div>
-      </div>
+                
+       <div className={StyleSheet.pages}>
+          <a href='/' className={StyleSheet.Terms1}>Get help</a>
+          <a href='/' className={StyleSheet.privacy2}>Add your restaurant</a>
+          <a href='/' className={StyleSheet.refund3}>Sign up to deliver</a>
+          <a href='/' className={StyleSheet.refunds3}>Create a Business account</a>
+        </div>
+       
+                    
+           
+     
+                    
+
+                </div>
+                <div className={StyleSheet.LastRow}>
+                    <p>Company # 490039-445, Registered with House of companies.</p>
+                    <div className={StyleSheet.socialMedia}>
+                    <a href='/'><img src={insta}/></a>
+                    <a href='/'><img src={face}/></a>
+                    <a href='/'><img src={snap}/></a>
+                    <a href='/'><img src={twitter}/></a>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div className={StyleSheet.copyright}>
+                <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <p>Pricing</p>
+                <p>Do not Sell or Share my personal Information</p>
+
+            </div>
+            </div>
     </div>
   );
 };

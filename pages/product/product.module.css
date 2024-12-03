@@ -4,6 +4,10 @@
 
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  
   
  
 
@@ -12,6 +16,21 @@
 
   
     color: #000;
+
+}
+.user1{
+    display: none;
+    
+}
+.menur{
+    display: none;
+}
+
+
+
+
+.cartDetails{
+max-width: 600px;
 
 }
 .display{
@@ -72,6 +91,9 @@ width: 10%;
     border: 3px solid transparent;
     width: 20%;
     background-color: green;
+    max-height: 300px;
+    overflow-y: auto;
+   
 
 }
 .checkoutButton{
@@ -123,7 +145,7 @@ width: 10%;
     
 
 }
-.user{
+.user,.user1{
     background-color: #000;
     border: 3px solid transparent;
     color: orange;
@@ -138,7 +160,7 @@ width: 10%;
 
 }
 .image1{
-   width: 50vw;
+   width: 100vw;
 }
 .basket{
     width: 50vw;
@@ -384,6 +406,11 @@ width: 10%;
    .mcFood2{
     max-width: 150px;
    }
+   .image1{
+    max-width: 100%;
+   }
+  
+
    
 }
 
@@ -413,6 +440,7 @@ width: 10%;
 .middle{
     display: flex;
     flex-direction: row;
+   
     gap: 20px;
 
 }
@@ -431,88 +459,31 @@ width: 10%;
 
 
 
-body,html{
-    width: 100vw;
-}
+
 .snaper{
     width: 90vw;
     position: relative;
     bottom: 22vh;
     right: 8vh;
 }
-.footer{
-    display: flex;
-    background: #D9D9D9;
-    flex-direction:column;
-    width: 100%;
+
+
+@media screen and (max-width:459px){
+    .image1{
+    max-width: 300px;
     
-
-    box-sizing: border-box;
-    
-
- 
-
-    justify-content: space-between;
-
- 
+    }
+    .user1{
+        display: block;
+    }
 
 
-
-    flex-wrap: wrap;
- 
-
-
-  
-
-  
-
-
-  
-    gap: 10px;
-
-}
-
-    
-.upperPart{
-    display: flex;
-    flex-direction: row;
-
-    flex-wrap: nowrap;
-    padding: 2em;
-
-    
-
-
-    justify-content: space-between;
-    gap: 10px;
-
-}
-.Uks{
-    display: flex;
-    
-    
-   
-    align-items: center; 
-
-
-    white-space: nowrap; 
-
-}
-.h2{
-    display: flex;
-    font-size: 1.5em;
-
-}
-.Uk{
-    background-color: grey;
-    transform: rotate(90deg);
-}
-@media screen and (max-width:456px){
     
     .footer{
         display: flex;
         background: #D9D9D9;
         flex-direction:column;
+        width: 100%;
     
         
     
@@ -532,6 +503,9 @@ body,html{
     
        
     }
+    .cartDetails{
+        display: block;
+    }
     
         
     }
@@ -539,7 +513,9 @@ body,html{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+       
     }
+
     .brands{
         display: flex;
         gap: 20px;
@@ -596,6 +572,9 @@ body,html{
         color: white;
         justify-content: space-between;
     }
+    .menur{
+        display: block;
+    }
     @media screen and (max-width:740px) {
         .mainImage{
             max-width: 500px;
@@ -627,7 +606,7 @@ body,html{
             max-width: 600px;
         }
         .footer{
-            max-width: 650px;
+            width: 100%;
             font-size: 0.5em;
         }
     }
@@ -655,6 +634,9 @@ body,html{
             display: none;
             
         }
+        .menur{
+            display: block;
+        }
         .user{
             background-color: orange;
             color: #000;
@@ -664,6 +646,7 @@ body,html{
         }
         .offers{
             max-width: 400px;
+            padding: 0 2em;
         }
         .All{
             max-width: 400px;
@@ -689,18 +672,19 @@ body,html{
             width: 100%;
         }
         .footer{
-            max-width: 500px;
+          width: 100%;
         }
         .apple,.apples{
-            max-width: 100px;
-            height: 20px;
+      
+            height: 30px;
         }
         .sub{
             width: 40%;
             font-size: 0.5em;
-            height: 50%;
+            height: 40%;
         }
         .submit{
+            height: 0%;
            
             font-size: 0.5em;
         }
@@ -721,28 +705,27 @@ body,html{
         gap: 20px;
         justify-content: space-between;
     }
+    .middle{
+        max-width: 1200px;
+    }
 
     @media screen and (max-width: 470px) {
-        .snaper{
-            max-width: 300px;
-            min-height: 400px;
-            align-items: center;
-        
-        }
-        .restaurants{
-            max-width: 400px;
-        }
+       .cart{
+        width: 50%;
+       }
+       .user{
+        display: none;
+       }
+       .menur{
+        display: block;
+       }
         .footer{
             max-width: 500px;
         }
-        .apple,.apples{
-        max-width: 50px;
-        height: 8vh;
+        .offers{
+            margin-right:  5em;
         }
-        .sub{
-            max-width: 50px;
-            font-size: 0.5em;
-        }
+      
         .middle{
             max-width: 120px;
             height: 200px;
@@ -754,11 +737,10 @@ body,html{
         .middlePart,.pages{
             display: flex;
             flex-direction: column;
-        }
-        .middlePart{
             align-items: center;
             gap: 10px;
         }
+      
         .sub,.submit{
             width: 100%;
         }
@@ -772,16 +754,37 @@ body,html{
         .policy{
             display: none;
         }
+      .snaper{
+        margin-left: 10%;
+       
+
+      }
+      .cartDetails{
+       display: block;
+      }  
+      .footer{
+        display: flex;
+        width: 100%;
+      }
+      .sub{
+        max-height: 10px;
+      }
+      .cartDetails{
+        display: block;
+       
+      }
 
      
 
 
     }
+
 .cartDetails{
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
 }
+
 .basket{
     background-color: green;
     width: 16vw;
@@ -806,3 +809,325 @@ margin-bottom: 1%;
 background-color: orange;
    
 }
+@media  screen and (max-width:1300px) {
+    .footer{
+     width: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+}
+
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction: column;
+    width: 100vw; /* Ensure it spans the entire viewport width */
+    padding: 0; /* Remove horizontal padding */
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    right: 12%;
+    padding: 0 2em;
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
+
+}
+
+.footerContainer{
+    width: 100%;
+}
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+
+
+
+    
+
+.middlePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+    color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
+
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10em;
+}
+@media screen  and (max-width: 1300px) {
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw; /* Ensure it spans the entire viewport width */
+        padding: 0; /* Remove horizontal padding */
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
+    
+    }
+    .menu{
+        max-width: 1200px;
+    }
+    .mapContainer{
+        max-width: 1200px;
+        margin-right: 10%;
+    }
+    .DeliveryContainer{
+        max-width: 1200px;
+    }
+  
+    .display,.display1{
+        max-width: 1000px;
+    }
+    .search{
+        margin: 0 5em;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .display,.display1{
+        max-width: 800px;
+        padding: 0 2em;
+    }
+    .Burger2{
+        display: flex;
+        padding: 0 2em;
+    }
+    .DeliveryContainer{
+        padding: 0 2em;
+    }
+   
+    
+}
+@media screen and (max-width: 590px) {
+    .snaper{
+        max-width: 300px;
+        min-height: 400px;
+        align-items: center;
+    
+    }
+    .restaurants{
+        max-width: 100px;
+    }
+    .footer{
+        max-width: 600px;
+    }
+    .apple,.apples{
+    max-width: 100px;
+    height: 10vh;
+    }
+    .sub{
+        max-width: 50px;
+        font-size: 0.5em;
+    }
+    .middle{
+        max-width:100%;
+        height: 200px;
+      
+    }
+  
+    .get{
+        display: none;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .policy{
+        display: none;
+    }
+   
+    .addressfield{
+        max-width: 50px;
+
+    }
+    .addresshere{
+        max-width: 200px;
+        font-size: 0.5em;
+    }
+    .class1{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+    }
+    .colmun{
+        display: flex;
+        align-items: center;
+    }
+   .sub,.submit{
+    max-height: 20px;
+    max-width: 900px;
+   }
+
+   .cartDetails {
+    display: block; 
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+  max-height: 80%;
+    overflow-y: auto;
+  }
+
+  .overlay {
+ 
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw;
+       height: 100vh;
+       background-color: rgba(0, 0, 0, 0.5); 
+       backdrop-filter: blur(5px); 
+       z-index: 999; 
+     }
+ 
+
+
+}
+

@@ -2,31 +2,135 @@
     color: #000;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+
 }
 .detailsContainer{
 display: flex;
-flex-direction: row;
-gap: 50px;
-padding: 0 2em;
+flex-direction: column;
+gap: 30px;
+
+
+
+
+justify-content: space-between;
 
    
 
 }
-.cardpayments{
+.usernames{
+    border: 3px solid transparent;
+    width: 100%;
+ 
+    background-color: #F9F9F9;
+
+ 
+    height: 48px;
+    top: 476px;
+    left: 167px;
+    gap: 0px;
+    border-radius:30px;
+    opacity: 0px;
+    
+}
+.submit{
+    
+
+}
+.mainSea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 23px;
+
+   
+
+    flex-wrap: wrap;
+}
+.usernames,.usernames1{
+    border:3px solid ;
+    min-width: 500px;
+    background-color: gray;
+    color: white;
+}
+.userName{
+    display: none;
+}
+.cardPayments{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:space-between;
-   align-items: flex-start;
+    align-items: start;
+    justify-content: space-between
+;
+
+ 
  
 }
+
 
 .cardDetails{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 40px;
 
+    margin-bottom: 10%;
+   
+
+
+}
+.mainbar {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    padding: auto;
+    flex-wrap: wrap;
+    padding: 0 3em;
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menuorders{
+
+    display: flex;
+    align-items: center; 
+    margin: 0 20px;
+    text-align: center;
+
+    white-space: nowrap; 
+
+}
+.uk{
+    transform: rotate(90deg);
+    background-color: orange;
+    
+
+}
+.user{
+     Width:184px;
+     Height:61px;
+     display: flex;
+     align-items: center;     
+     border-radius: 120px;
+
+   
+    background: #03081F;
+    color: orange;
 
 }
 .addingcard{
@@ -42,9 +146,13 @@ padding: 0 2em;
  display: flex;
  flex-direction: column;
  border: 1px solid;
- max-width: 100%;
- width: 20vw;
- height: 16vh;
+width: 100%;
+
+ padding: 12px 0px 0px 0px;
+ gap: 24px;
+ border-radius: 12px 0px 0px 0px;
+ border: 0.5px 0px 0px 0px;
+ opacity: 0px;
 font-size: small;
 gap: 0;
  
@@ -66,24 +174,67 @@ gap: 0;
     justify-content: center;
     align-items: center;
     z-index: 1000; 
-    border: 5px solid ;
+    border: 5px solid transparent;
 
+}
+.form{
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+ 
+
+    backdrop-filter: blur(5px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    border: 5px solid black;
+
+}
+.editName{
+background-color: white;
+color: #000;
+margin:1em ;
+}
+.Removal{
+    background-color: orange;
 }
 .Removals{
     display: flex;
     flex-direction: row;
     background-color: orange;
     gap: 130px;
-    align-self: flex-start;
-    max-width: 100%;
+    align-items: center;
+    margin-top: 30%;
+ 
+    max-width: 1200px;
+    width: 100%;
     flex-wrap: nowrap;
-    position: relative;
-    right: 3%;
-    
+  
 
 
    
 
+}
+
+@media screen  and (max-width:624px){
+    .Removals{
+        max-width: 300px;
+    }
+    .remove{
+        display: flex;
+       width: 20px;
+    }
+    .cardNumber{
+        display: flex;
+        width: 100px;
+    }
+   
 }
 .removals{
     
@@ -151,4 +302,461 @@ max-width: 100px;
     justify-content: space-between;
     position: relative;
     bottom: 1vh;
+}
+.header{
+    display: flex;
+    color: #000;
+    border: 1px solid transparent;
+    max-width: 100%;
+    width: 90vw;
+    gap: 20px;
+    align-items: center;
+    
+
+   
+  
+  
+    justify-content: space-between;
+   
+
+    align-items: flex-end;
+
+    flex-direction: row;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    justify-content:space-between;
+
+
+    min-height: 100vh;
+
+
+color: #000;
+
+
+
+
+ 
+
+
+    
+
+
+
+
+   
+
+
+  
+    color: #000; 
+}
+.cart{
+    width: 300px;
+    height: 70px;
+    align-items: center;
+
+    gap: 0px;
+    opacity: 0px;
+    
+    border: 4px solid white;
+    background-color: green;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    border-radius: 10px;
+    opacity: 0px;
+  
+}
+.img{
+width: 10%;
+
+}
+.checkout{
+    display: flex;
+    gap: 10px;
+  
+
+    justify-content: space-between;
+
+    max-width: 100%;
+    width:50vw;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 2em;
+}
+.details{
+    color: #000;
+    
+}
+.cartItem{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+
+.orders{
+    position: absolute;
+}
+.address{
+text-decoration: underline;
+color: orange;
+
+}
+
+.addressfield{
+display: flex;
+flex-direction: column;
+margin-left: 10%;
+
+align-items: center;
+
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+}
+
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction: column;
+    width: 100vw; /* Ensure it spans the entire viewport width */
+    padding: 0; /* Remove horizontal padding */
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    right: 12%;
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
+
+}
+
+.footerContainer{
+    width: 100%;
+}
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+
+
+
+    
+
+.middlePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+    color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
+
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10em;
+}
+@media  screen and (max-width: 736px) {
+    .restaurants{
+        max-width: 300px;
+    }
+    .mainbar{
+        max-width: 500px;
+    }
+    .addressfield{
+        max-width: 100px;
+    }
+
+    .apple,.apples{
+        max-width: 50px;
+        height: 10px;
+        
+    }
+    
+}
+@media screen and (max-width: 590px) {
+    .snaper{
+        max-width: 300px;
+        min-height: 400px;
+        align-items: center;
+    
+    }
+    .restaurants{
+        max-width: 100px;
+    }
+    .footer{
+       width: 100%;
+       align-items: center;
+    }
+
+    .sub{
+       
+      height: 40px;
+    }
+    .middle{
+        max-width: 120px;
+        height: 200px;
+    }
+  
+    .get{
+        display: none;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .policy{
+        display: none;
+    }
+    .cartDetails {
+   display: none;
+ 
+ 
+    }
+    .addressfield{
+        max-width: 50px;
+
+    }
+    .addresshere{
+        max-width: 200px;
+        font-size: 0.5em;
+    }
+    .class1{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+    .userName{
+       
+        Width:184px;
+        Height:61px;
+        display: flex;
+        align-items: center;     
+        border-radius: 120px;
+   
+      
+       background: #03081F;
+       color: orange;
+    }
+    .user{
+        display: none;
+    }
+    .rowing{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .class{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    
+    }
+    .mainbar{
+        font-size: 1em;
+        max-width: 300px;
+
+    }
+    .order,.uk{
+        font-size: 1em;
+    }
+    .apple,.apples{
+        min-width: 200px;
+      
+    }
+   
+    .detailsContainer{
+        max-width: 70%;
+    }
+    .usernames{
+        padding: 0 2em;
+        min-width: 300px;
+    }
+
+
+}
+
+.user{
+
+
+
+}
+@media screen and (min-width:1400px) {
+    .footer{
+      width: 100vw;
+    }
+    
+  }
+  @media screen  and (max-width: 1300px)  {
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw; 
+        padding: 0; 
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
+    
+    }
+  }
+  
+  @media screen and (max-width:800px) {
+   .apple,.apples{
+  height: 50%;
+   }
+}  
+
+.detailsContainer{
+    padding: 0 4em;
+}
+
+@media  screen and (max-width:450px) {
+    .header{
+        max-width: 100px;
+    }
+    .usernames{
+        padding: 0 2em;
+        min-width: 100px;
+    }
+    .apple,.apples{
+        min-width:100px;
+    }
+    
 }

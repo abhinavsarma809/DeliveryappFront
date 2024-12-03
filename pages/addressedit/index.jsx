@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import images from "../../src/assets/Basket.png";
 import StyleSheet from "./address.module.css";
 import { useLocation } from "react-router-dom";
+import male from "../../src/assets/Male User.png";
+import brand from '../../src/assets/Vector.png';
+import group from '../../src/assets/Group.png';
+import face from '../../src/assets/Facebook.png';
+import insta from '../../src/assets/Instagram.png';
+import snap from '../../src/assets/snap.png';
+import twitter  from '../../src/assets/twitter.png';
+import menu from '../../src/assets/menu.png';
 
 const statesList = [
   "Andhra Pradesh",
@@ -85,10 +93,11 @@ const Address = () => {
 
   return (
     <div className={StyleSheet.container}>
+      <div className={StyleSheet.rowing}>
       <div className={StyleSheet.header}>
-        <h4>Get 60% off on your first order, Promo: Orders</h4>
-        {address && <p>{address}</p>}
-        {userName && <p>Hello, {userName}</p>}
+        <h4 className={StyleSheet.off}>Get 60% off on your first order, Promo: Orders</h4>
+        {address && <p className={StyleSheet.afer}>{address}</p>}
+        {userName && <p className={StyleSheet.userName}>Hello, {userName}</p>}
         <p className={StyleSheet.cart}>
           <img src={images} className={StyleSheet.img} alt="Cart" />
           My Cart
@@ -96,9 +105,21 @@ const Address = () => {
       </div>
 
       <div className={StyleSheet.mainbar}>
-        <h2>Order</h2>
+                <div className={StyleSheet.menuorders}>
+                <h1 className={StyleSheet.order}>Order</h1>
+                <h1 className={StyleSheet.uk}>uk.</h1>
+           
+                </div>
+                <img src={menu} className={StyleSheet.menuing}/>
+                <h4 className={StyleSheet.class}>Home</h4>
+                <h4 className={StyleSheet.class1}>Browser Menu</h4>
+                <p className={StyleSheet.class1}>specials offers</p>
+                <p className={StyleSheet.class1}>Restaurants</p>
+                <p className={StyleSheet.class1}>Track Order</p>
+                {userName && <p className={StyleSheet.user} onClick={()=>navigate('/details')}><img src={male}/>Hello, {userName}</p>} 
+        
       </div>
-
+      </div>
       <div className={StyleSheet.Edit}>
         <h2>&larr; Your Address</h2>
         <div className={StyleSheet.changeAddress}>
@@ -112,9 +133,9 @@ const Address = () => {
 
           {/* Display Saved Addresses */}
           {savedAddresses.length > 0 && (
-            <div className={StyleSheet.displayAddress}>
+ 
               
-              {savedAddresses.map((addr, index) => (
+              savedAddresses.map((addr, index) => (
                 <>
                
                 <div key={index} className={StyleSheet.savedAddress}>
@@ -123,8 +144,8 @@ const Address = () => {
                   <p>Address: {addr.address}</p>
                 </div>
                 </>
-              ))}
-            </div>
+              ))
+          
           )}
 
           {True && (
@@ -183,6 +204,73 @@ const Address = () => {
           )}
         </div>
       </div>
+      <div className={StyleSheet.footer}>
+                <div className={StyleSheet.upperPart}>
+                    <div className={StyleSheet.Uks}>
+                    <h1 className={StyleSheet.h2}>Order</h1>
+                    <p className={StyleSheet.Uk}>UK.</p>
+                    </div>
+                    <p className={StyleSheet.get}>Get Exclusive Deals in your Inbox</p>
+                    <p className={StyleSheet.get}>Legal Pages</p>
+                    <p className={StyleSheet.get}>Important Links</p>
+                    
+
+                </div>
+              <div className={StyleSheet.middlePart}>
+                    <div className={StyleSheet.brands}>
+                    <img src={brand} className={StyleSheet.apple} />
+                    <img src={group} className={StyleSheet.apples} />
+
+                    </div>
+         <div className={StyleSheet.social}>
+         <input type='search' className={StyleSheet.sub} placeholder='Your email@gmail.com' />
+         <button className={StyleSheet.submit}>Subscribe</button>
+
+         </div>
+         <div className={StyleSheet.pages}>
+          <a href='/' className={StyleSheet.Terms}>Terms and Conditions</a>
+          <a href='/' className={StyleSheet.privacy}>Privacy</a>
+          <a href='/' className={StyleSheet.refund}>Cookies</a>
+          <a href='/' className={StyleSheet.refunds}>Modern Slavery Statement</a>
+        </div>
+                
+       <div className={StyleSheet.pages}>
+          <a href='/' className={StyleSheet.Terms1}>Get help</a>
+          <a href='/' className={StyleSheet.privacy2}>Add your restaurant</a>
+          <a href='/' className={StyleSheet.refund3}>Sign up to deliver</a>
+          <a href='/' className={StyleSheet.refunds3}>Create a Business account</a>
+        </div>
+       
+                    
+           
+     
+                    
+
+                </div>
+                <div className={StyleSheet.LastRow}>
+                    <p>Company # 490039-445, Registered with House of companies.</p>
+                    <div className={StyleSheet.socialMedia}>
+                    <a href='/'><img src={insta}/></a>
+                    <a href='/'><img src={face}/></a>
+                    <a href='/'><img src={snap}/></a>
+                    <a href='/'><img src={twitter}/></a>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div className={StyleSheet.copyright}>
+                <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <p>Pricing</p>
+                <p>Do not Sell or Share my personal Information</p>
+
+            </div>
+          
+
+
     </div>
   );
 };

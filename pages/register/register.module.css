@@ -1,3 +1,360 @@
-.container{
+.pagecontainer{
+    display: flex;
+    flex-direction: column;
+
     color: #000;
+
+   
+}
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+
+
+
+
+
+
+
+}
+.colmun{
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: flex-start;
+
+    
+
+
+}
+.class{
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.image{
+    max-width: 100%;
+    display: flex;
+    padding: 0 10em;
+    margin-bottom:10% ;
+    
+
+
+    height: 600px;
+}
+.hand{
+    max-width: 50px;
+}
+.uk{
+    transform: rotate(90deg);
+    background-color: orange;
+    
+
+}
+.menuorders{
+    display: flex;
+}
+.email,.password,.name,.sex,.country{
+    background-color: white;
+    color: #000;
+}
+@media screen and (max-width: 670px) {
+    .image{
+        display: none;
+    }
+    
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+}
+
+.footer{
+    display: flex;
+    background: #D9D9D9;
+    flex-direction: column;
+    width: 100vw; /* Ensure it spans the entire viewport width */
+    padding: 0; /* Remove horizontal padding */
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    right: 12%;
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
+
+}
+
+.footerContainer{
+    width: 100%;
+}
+.upperPart{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    
+
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.Uks{
+    display: flex;
+    
+    
+   
+    align-items: center; 
+
+
+    white-space: nowrap; 
+
+}
+.h2{
+    display: flex;
+    font-size: 1.5em;
+
+}
+.Uk{
+    background-color: grey;
+    transform: rotate(90deg);
+}
+
+
+
+    
+
+.middlePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
+    color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
+
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10em;
+}
+@media  screen and (max-width: 736px) {
+    .restaurants{
+        max-width: 300px;
+    }
+    .mainbar{
+        max-width: 500px;
+    }
+    .addressfield{
+        max-width: 100px;
+    }
+
+    .apple,.apples{
+        max-width: 50px;
+        height: 10px;
+        
+    }
+ 
+    
+}
+@media screen and (max-width: 590px) {
+    .snaper{
+        max-width: 300px;
+        min-height: 400px;
+        align-items: center;
+    
+    }
+    .restaurants{
+        max-width: 100px;
+    }
+    .footer{
+        max-width: 600px;
+    }
+    .apple,.apples{
+    max-width: 100px;
+    height: 10vh;
+    }
+    .sub{
+        max-width: 50px;
+        font-size: 0.5em;
+    }
+    .middle{
+        max-width: 120px;
+        height: 200px;
+    }
+  
+    .get{
+        display: none;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .policy{
+        display: none;
+    }
+    .cartDetails {
+   display: none;
+ 
+ 
+    }
+    .addressfield{
+        max-width: 50px;
+
+    }
+    .addresshere{
+        max-width: 200px;
+        font-size: 0.5em;
+    }
+    .class1{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+    }
+    .colmun{
+        display: flex;
+        align-items: center;
+    }
+   
+
+
+
+ 
+
+
+}
+
+.user{
+    background-color: #000;
+    border: 3px solid transparent;
+    color: orange;
+    width: auto;
+    border-radius: 48px;
+    font-size: small;
+    white-space: nowrap;
+    flex: 0;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+@media screen  and (max-width: 1300px) {
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw; /* Ensure it spans the entire viewport width */
+        padding: 0; /* Remove horizontal padding */
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
+    
+    }
 }

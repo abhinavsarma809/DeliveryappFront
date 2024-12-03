@@ -12,7 +12,7 @@ body{
     max-width: 100%;
  
 
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     
     
 }
@@ -219,12 +219,9 @@ body{
         width: 100%;
         margin-left: 100px;
         }
-        .rotate{
-            display: flex;
-            position: relative;
+       
+      
           
-          
-        }
         
 }
 @media (min-width: 1800px) {
@@ -331,34 +328,11 @@ body{
   
             
         }
-        .footer{
-         display: flex;
-         flex-wrap:wrap ;
-         position: absolute;
-         bottom: 70px;
-         right: -98px;
-
-        }
+      
         .data{
             position:absolute;
         }
-        .order{
-        
-           padding-top: 20px;
-        }
-       .pages{
-        margin-right: 10%;
-       }
-       .links{
-        margin-left: 91%;
-        position: relative;
-        bottom: 250px;
-        font-size: 0.9em;
-   
-       }
-       .submit{
-        margin-top: 11vh;
-       }
+ 
        
 }
 
@@ -415,19 +389,15 @@ body{
             display: inline-block;
             margin-left: 50px;
         }
-        .footer {
-            transform: none;
+        
        
-            display: flex;
-     
-         
-            
-            
-        }
         .navu{
             margin-left: 20px;
 
        
+        }
+        .apple,.apples{
+            max-height: 50px;
         }
 }
 @media screen and  (max-width: 768px) {
@@ -511,17 +481,18 @@ body{
         .log{
             transform: translatex(220px)translateY(-10px);
         }
-        .footer{
-            display: flex;
-            flex: 1 1 x;
-            flex-wrap: wrap;
-            height: 700px;
-            font-size: 0.8em;
-   
-            
-          
-       
+        .sub,.submit{
+            max-width: 100px;
+            max-height: 30px;
+            font-size: 0.6em;
         }
+        .middlePart{
+            font-size: 0.6em;
+        }
+      .apple,.apples{
+        height: 80px;
+       
+      }
 }
 @media screen and (max-width: 606px) {
     .container {
@@ -588,10 +559,7 @@ body{
     .button{
         transform: translate(220%,-10%);
     }
-    .order{
-       position: relative;
-
-    }
+    
 
 }
 @media screen and (max-width: 499px) {
@@ -662,13 +630,8 @@ body{
     .button{
         transform: translate(200%,0%);
     }
-    .footer{
-        font-size: 0.5em;
-    }
-    .order{
-        margin-top: 2em;
-        
-    }
+  
+
     .navu{
         position: relative;
         right: 10px;
@@ -678,186 +641,365 @@ body{
 }
 
 
-.divcontain{
-    color: black;
-    transform: translate(10%,20%);
-}
+
 .hand{
     width: 40px;
     height: 40px;
     transform: rotate(10deg);
     margin-left: 10px;
 }
-.footer {
-    background-color:#ececec;
-    width: 100vw; 
-    max-width: 100vw;
-    margin: 0 auto; 
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+   
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    position: relative;
+    top: 10vw;
+}
+
+.footer{
     display: flex;
-    align-items: center;
+    background: #D9D9D9;
+    flex-direction: column;
+    width: 100vw; /* Ensure it spans the entire viewport width */
+    padding: 0; /* Remove horizontal padding */
+    box-sizing: border-box;
     justify-content: space-between;
     gap: 10px;
+    position: relative;
+    right: 12%;
+    padding: 0 5em;
+ 
+
+}
+.copyright{
+    width: 100vw;
+    position: relative;
+    right: 12%;
+
+}
+
+.footerContainer{
+    width: 100%;
+}
+.upperPart{
+    display: flex;
     flex-direction: row;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 2em;
 
-transform: translate(-130px,100px);
-    height: 400px;
-    padding: 0 2em; 
-    flex: 1 1  calc(25%-30px);
-   
-  
     
- 
 
 
-
-    position: relative; 
-    box-sizing: border-box;
- 
+    justify-content: space-between;
+    gap: 10px;
 
 }
-
-
-.order{
+.Uks{
     display: flex;
+    
+    
    
+    align-items: center; 
 
 
-    position: absolute;
-    top: 1vh;
-    left: 14%;
-    color: #000;
-    font-size: clamp(1em,3vw,3em);
+    white-space: nowrap; 
 
 }
+.h2{
+    display: flex;
+    font-size: 1.5em;
 
-.navu{
-
-    position: relative;
-    bottom: 18vh;
-    left: 21%;
+}
+.Uk{
+    background-color: grey;
     transform: rotate(90deg);
-    background-color: gray;
-    font-size: clamp(1em,1vw,3em);
-
-
-    color: #000;
 }
-.deals{
 
-    color: #000;
-    position: relative;
-    bottom: 18vh;
-    left: 24%;
-    max-width: 30em;
-    font-size: clamp(1em,2vw,3em);
-    display: flex;
-    flex-wrap: wrap;
-}
-.legal{
-    margin-bottom: 40vh;
-    position: relative;
- 
-    left: 25%;
-    font-size: clamp(1em,2vw,3em);
-    color: #000;
+
+
     
-}
-.apple{
 
+.middlePart{
     display: flex;
-    max-width: 100px;
-    flex-wrap: wrap;
     flex-direction: row;
-  
-    position: absolute;
-    left: 13%;  
-    background-color: #000;
-    border: 5px solid black;
-    border-radius: 13px;
-    margin-bottom: 8vh;
-
-
-
- 
+    justify-content: space-between;
 }
-.apples{
+.brands{
     display: flex;
-    max-width: 100px;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    position: absolute;
-    left: 20%;  
-    background-color: #000;
-    border: 5px solid black;
-    border-radius: 13px;
-    margin-bottom: 8vh;
+    gap: 20px;
 }
-.sub{
- 
-        display: flex;
-        width: 20%;
-        max-width: 400em;
-        flex-wrap: wrap;
-        flex-direction: row;
-        color: #000;
-    
-        position: absolute;
-        left: 30%;  
-        background-color:white;
-        border: 5px solid transparent;
-        border-radius: 13px;
-        margin-bottom: 8vh;
+.social{
+    display: flex;
 
 }
-.submit{
-    position: relative;
-    right: 19% ;
-    bottom: 4vh;
-    max-width: 100px;
-    border: 6px solid transparent;
-    padding: 1px;
-    border-radius: 20px;
-    background-color:orange;
-    color: black;
-}
+
 .pages{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    position: relative;
-    right:  22vh;
-    bottom: vh;
-    gap: 10px;
-    cursor: pointer;
-    text-decoration: underline;
-  
- 
 
-    
+
 
 
 }
-.Terms,.privacy,.cookies,.Modern{
+.apple,.apples{
+    max-width: 100px;
+    padding: 1em;
+}
+.sub{
+    max-width: 200px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 20px;
+   height: 7vh;
+}
+.submit{
+    height: 6vh;
+    color:beige;
+    background-color: orange;
+    border-radius: 20px;
+}
+.Terms,.privacy,.refund,.refunds,.Terms1,.privacy2,.refund3,.refunds3{
     color: #000;
+}
+.LastRow{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    padding: 2em;
+}
+.socialMedia{
+    display: flex;
 
 }
-.links{
+.copyright{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    position: relative;
-    right:  20vh;
-    bottom: vh;
-    gap: 10px;
-    cursor: pointer;
-    text-decoration: underline;
-  
- 
+    flex-direction: row;
+    background: #03081F;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10em;
 }
-.sign,.helps,.create,.help,.Add{
-    color: #000;
+@media  screen and (max-width: 736px) {
+    .restaurants{
+        max-width: 300px;
+    }
+    .mainbar{
+        max-width: 500px;
+    }
+    .addressfield{
+        max-width: 100px;
+    }
 
+    .apple,.apples{
+        max-width: 50px;
+        height: 10px;
+        
+    }
+ 
+    
+}
+@media screen and (max-width: 590px) {
+    .snaper{
+        max-width: 300px;
+        min-height: 400px;
+        align-items: center;
+    
+    }
+    .restaurants{
+        max-width: 100px;
+    }
+    .footer{
+        max-width: 600px;
+    }
+    .apple,.apples{
+    max-width: 100px;
+    height: 10vh;
+    }
+    .sub{
+        max-width: 50px;
+        font-size: 0.5em;
+    }
+    .middle{
+        max-width: 120px;
+        height: 200px;
+    }
+  
+    .get{
+        display: none;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .policy{
+        display: none;
+    }
+    .cartDetails {
+   display: none;
+ 
+ 
+    }
+    .addressfield{
+        max-width: 50px;
+
+    }
+    .addresshere{
+        max-width: 200px;
+        font-size: 0.5em;
+    }
+    .class1{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+    }
+    .colmun{
+        display: flex;
+        align-items: center;
+    }
+   
+
+
+
+ 
+
+
+}
+
+.user{
+    background-color: #000;
+    border: 3px solid transparent;
+    color: orange;
+    width: auto;
+    border-radius: 48px;
+    font-size: small;
+    white-space: nowrap;
+    flex: 0;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+@media screen  and (max-width: 1300px) {
+    .footer{
+        display: flex;
+        background: #D9D9D9;
+        flex-direction: column;
+        width: 100vw; /* Ensure it spans the entire viewport width */
+        padding: 0; /* Remove horizontal padding */
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        right: 3%;
+    
+        
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: #03081F;
+        color: white;
+        justify-content: space-between;
+        position: relative;
+        right: 3%;
+    
+    }
+}
+@media screen and (max-width: 590px) {
+
+   
+    .footer{
+        max-width: 600px;
+    }
+    .apple,.apples{
+    max-width: 50px;
+    height: 10vh;
+    }
+    .sub{
+        max-width: 50px;
+        font-size: 0.5em;
+    }
+    .middle{
+        max-width: 120px;
+        height: 200px;
+    }
+  
+    .get{
+        display: none;
+    }
+   
+    .upperPart{
+        display: flex;
+        align-self: center;
+    }
+    .middlePart,.pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .middlePart{
+        align-items: center;
+        gap: 10px;
+    }
+    .sub,.submit{
+        width: 100%;
+    }
+    .submit{
+        height: 10%;
+    }
+    .LastRow{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+
+
+}
+.upperPart{
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    align-items: center;
+}
+.LastRow{
+    display: flex;
+    color: #000;
 }

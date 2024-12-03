@@ -14,6 +14,7 @@ import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
 import mains from '../../src/assets/mobileImage.jpeg';
+import menu from '../../src/assets/menu.png';
 
 
 const Home = () => {
@@ -149,6 +150,7 @@ const Home = () => {
                     <img src={image} className={StyleSheet.basket} alt="Cart" />
                     My Cart
                 </p>
+                {userName && <p className={StyleSheet.userName}>Hey,{userName}</p>}
 
             
               
@@ -161,6 +163,7 @@ const Home = () => {
                 <h1 className={StyleSheet.uk}>uk.</h1>
            
                 </div>
+                <img src={menu} className={StyleSheet.menur}/>
                 
                 <h4 className={StyleSheet.class}>Home</h4>
                 <h4 className={StyleSheet.class1}>Browser Menu</h4>
@@ -171,7 +174,7 @@ const Home = () => {
                 <div className={StyleSheet.logsign}>
                     {userName ? (
                         <>
-                            <p onClick={()=>navigate('/details')} className={StyleSheet.user}>Hey, {userName}</p>
+                            <p onClick={()=>navigate('/details',{state:{location,userName}})} className={StyleSheet.user}>Hey, {userName}</p>
                             <button onClick={handleLogout} className={StyleSheet.Logout}>Logout</button>
                         </>
                     ) : (
@@ -370,6 +373,7 @@ const Home = () => {
 
 
             </div>
+            <div className={StyleSheet.footerContainer}>
             <div className={StyleSheet.footer}>
                 <div className={StyleSheet.upperPart}>
                     <div className={StyleSheet.Uks}>
@@ -436,6 +440,7 @@ const Home = () => {
             </div>
           
 
+        </div>
         </div>
     );
 };
