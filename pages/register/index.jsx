@@ -1,12 +1,11 @@
 import React, { useState,useEffect } from 'react';
-import { register } from '../services';  // Assuming you have a register service function
+import { register } from '../services';  
 import toast from 'react-hot-toast';
 import StyleSheet from "./register.module.css";
 import { getImage} from '../services';
 import { useNavigate } from 'react-router-dom';
 import images from "../../src/assets/hand.jpeg";  
-import Footer from '../footer';
-import reviews from "../../src/assets/reviews.jpeg";
+
 import brand from '../../src/assets/Vector.png';
 import group from '../../src/assets/Group.png';
 import face from '../../src/assets/Facebook.png';

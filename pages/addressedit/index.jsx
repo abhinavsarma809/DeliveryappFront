@@ -9,7 +9,7 @@ import face from '../../src/assets/Facebook.png';
 import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
-import menu from '../../src/assets/menu.png';
+import menu from '../../src/assets/Menu.png';
 
 const statesList = [
   "Andhra Pradesh",
