@@ -2,7 +2,7 @@
 
 
 
-const BACKEND_URL = 'https://backend-one-virid-81.vercel.app'; 
+const BACKEND_URL = 'http://localhost:5000'; 
 
 export const login = async (data) => {
     console.log(BACKEND_URL); 
