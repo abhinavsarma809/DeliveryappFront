@@ -2,7 +2,7 @@
 
 
 
-const BACKEND_URL = 'http://localhost:5000'; 
+const BACKEND_URL = 'https://backend-black-psi.vercel.app'; 
 
 export const login = async (data) => {
     console.log(BACKEND_URL); 
