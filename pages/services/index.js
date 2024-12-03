@@ -1,5 +1,5 @@
 
-const BACKEND_URL = 'https://backend-dzra.vercel.app/'
+const BACKEND_URL = 'https://backend-qj3h.vercel.app/'
 
 
  
