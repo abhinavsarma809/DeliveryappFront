@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getImage } from '../services';
+
 import StyleSheet from './home.module.css';
 import { useNavigate,useLocation } from 'react-router-dom';
 import images from "../../src/assets/Location.png";
@@ -31,23 +31,14 @@ const Home = () => {
 
 
     useEffect(() => {
-        const fetchImage = async () => {
-            try {
-              const imageId = ['674822ee5f6b959eb49161b2','6748a0863026eb4234fcc34b','6748b0df3026eb4234fcc3c6','6748b1613026eb4234fcc3ca','6748b1873026eb4234fcc3cc','674960b218d6456bac6bae06','6749607918d6456bac6bae04','674960d218d6456bac6bae08','674960e718d6456bac6bae0a','6749611f18d6456bac6bae0c','6749614818d6456bac6bae0e','67497c2a18d6456bac6bb277','67497c6318d6456bac6bb279','67497c8618d6456bac6bb27b','67497cad18d6456bac6bb27d','67497ccd18d6456bac6bb27f','6749829b18d6456bac6bb573','6749877e18d6456bac6bb5aa','6749874718d6456bac6bb5a8']; 
-              const fetchedImages = await Promise.all(
-                imageId.map(id => getImage(id))
-            );
+        
 
-              setImager(fetchedImages); 
-            } catch (error) {
-              console.error('Error fetching image:', error);
-            }
-          };
+          
         const storedName = localStorage.getItem('userName');
         if (storedName) {
             setUserName(storedName); 
         }
-        fetchImage();
+       
     }, []);
   
     const cut = () => {
@@ -67,39 +58,6 @@ const Home = () => {
     const toggleDown=()=>{
         setTrue((prevState)=>(!prevState))
     }
-    const randomImages = [
-        imager[0],
-        imager[11],
-        imager[12],
-        imager[13],
-        imager[14],
-        imager[15],
-        
-    ];
-    const handleImages=[
-        imager[1],
-    
-    ]
-    const offerImages=[
-        imager[2],
-        imager[3],
-        imager[4]
-    ]
-    const catImages=[
-        imager[5],
-        imager[6],
-        imager[7],
-        imager[8],
-        imager[9],
-        imager[10],    
-    ]
-    const displayImages=[
-        imager[16],
-    ]
-    const DisplayImages=[
-        imager[17],
-        imager[18],
-    ]
 
 
 
@@ -201,16 +159,16 @@ const Home = () => {
 <img src={mains}/>
 </div>
 
-{handleImages.map((img, index) => (
+
                         <img 
-                            key={index}
-                            src={img} 
+                           
+                            src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289259/restaurant/lecagjxi6ziijxlsmr1t.png' 
        
                             className={StyleSheet.mainImage} 
-                            alt={`Restaurant ${index + 1}`} 
+                       
                         />
 
-                    ))}
+                  
 
 
    
@@ -222,33 +180,52 @@ const Home = () => {
 
     <p className={StyleSheet.Pizza}>Pizza & Fast Food</p>
     <p className={StyleSheet.nadumu}>others</p>
-    
+   
     
     </div> 
     <div className={StyleSheet.offerImages}>
-{offerImages.map((img, index) => (
+
                         <img 
-                            key={index}
-                            src={img} 
+                          
+                            src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289520/restaurant/h5jb1ea18g7sxhxgwzaz.png'
        
                             className={StyleSheet.mainImages} 
-                            alt={`Restaurant ${index + 1}`} 
+                            
                         />
-                    ))}
-            
+                         <img 
+                          
+                          src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289548/restaurant/sodwx1hpu93faz7dabpv.png'
+     
+                          className={StyleSheet.mainImages} 
+                          
+                      />
+                       <img 
+                          
+                          src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289560/restaurant/xckin0bn6tl7quqgfqvz.png'
+     
+                          className={StyleSheet.mainImages} 
+                          
+                      />
+                
+                
     </div>  
     <div className={StyleSheet.categories}>
         <h4>order.uk popular Categories</h4>
         <div className={StyleSheet.category}>
-        {catImages.map((img, index) => (
+      
                         <img 
-                            key={index}
-                            src={img} 
+                        
+                            src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/amxg1ml10jvrpjmrdrga.png'
        
                             className={StyleSheet.categoryImages} 
-                            alt={`Restaurant ${index + 1}`} 
+                           
                         />
-                    ))}
+                        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/hyiwbkr6ia9y5bpdhy6f.png'   className={StyleSheet.categoryImages} />
+                        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/oebwk5i1hfpdjd9zm2ik.png'className={StyleSheet.categoryImages} />
+                        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/zifbhqz5bvhnth8oqxrd.png' className={StyleSheet.categoryImages} />
+                        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/pr2mkzasfmrm8s3ofhhq.png'    className={StyleSheet.categoryImages} />
+                        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733289921/restaurant/toimt34zupzsbsao3hzy.png' className={StyleSheet.categoryImages} />
+                        
 
         </div>
 
@@ -258,46 +235,42 @@ const Home = () => {
 <div className={StyleSheet.menu}>
                 <div className={StyleSheet.restaurants}>
                  
-                    {randomImages.map((img, index) => (
-                        <img 
-                            key={index}
-                            src={img} 
-                            onClick={() => navigate('/product', { state: { location, userName } })} 
-                            className={StyleSheet.mcdonals} 
-                            alt={`Restaurant ${index + 1}`} 
-                        />
-                    ))}
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1732775839/restaurant/McDonals.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288857/restaurant/lghxecjekulvt0bnznao.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/xmzitotdlaoe6flcouxc.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/dwxowxwrpvkav8zqd6ni.png"       onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/povpolt5eguni1falg6c.png"      onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/lmg5diklangrhc50tnpm.png" onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
                 </div>
             </div>
             <div className={StyleSheet.displayImages}>
-            {
-              
-            
-           displayImages.map((img, index) => (
+       
                 <img 
-                    key={index}
-                    src={img} 
+                
+                    src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733290297/restaurant/lmraa0vn7ye4lkwxps1p.png'
 
-                    className={StyleSheet.displayImagess} 
-                    alt={`Restaurant ${index + 1}`} 
-                />
-            ))
-            }
+                    className={StyleSheet.displayImagess} />
+                   
+          
+            
             </div>
             <div className={StyleSheet.DisplayImages}>
-            {
-              
-            
-           DisplayImages.map((img, index) => (
+          
                 <img 
-                    key={index}
-                    src={img} 
+                   
+                    src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733290456/restaurant/vj35ukgwsmph7wgfcfww.png'
 
                     className={StyleSheet.DisplayImagess} 
-                    alt={`Restaurant ${index + 1}`} 
+                    
                 />
-            ))
-            }
+                 <img 
+                   
+                   src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733290409/restaurant/gahcfus29od9t812zeqd.png'
+
+                   className={StyleSheet.DisplayImagess} 
+                   
+               />
+            
             </div>
             <div className={StyleSheet.Knowabout}>
                 <div className={StyleSheet.support}>

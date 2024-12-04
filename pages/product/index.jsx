@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getFood } from '../services';
-import { getImage } from '../services';
+
 import StyleSheet from "./product.module.css";
 import images from "../../src/assets/Basket.png";
 import image from "../../src/assets/Location.png"
@@ -47,20 +47,10 @@ const Product = () => {
 
     
     useEffect(() => {
-        const fetchImage = async () => {
-            try {
-              const imageId = ['674af99d5bfbc8f981742793','674b02295bfbc8f9817427f7','674b023e5bfbc8f9817427f9','674b02585bfbc8f9817427fb','674822ee5f6b959eb49161b2','67497c2a18d6456bac6bb277','67497c6318d6456bac6bb279','67497c8618d6456bac6bb27b','67497cad18d6456bac6bb27d','67497ccd18d6456bac6bb27f']; 
-              const fetchedImages = await Promise.all(
-                imageId.map(id => getImage(id))
-            );
-
-              setImager(fetchedImages); 
-            } catch (error) {
-              console.error('Error fetching image:', error);
-            }
-          };
+      
      
-        fetchImage();
+   
+        
      
             const storedName = localStorage.getItem('userName');
             if (storedName) {
@@ -68,23 +58,13 @@ const Product = () => {
             }
         fetchFood();
     }, []);
-    const middle=[
-        imager[0],
-    ]
+ 
     const foods =[ 
-        imager[1],
-        imager[2],
-        imager[3]
-    ]
-    const randomImages = [
-        imager[4],
-        imager[5],
-        imager[6],
-        imager[7],
-        imager[8],
-       
+      
+      
         
-    ];
+    ]
+ 
     const itemsTotal = cart.reduce((total, item) => {
         const price = parseInt(item.price.replace("₹", ""), 10); 
         console.log(`Adding item price: ${price}, Current Total: ${total}`);
@@ -141,13 +121,10 @@ const Product = () => {
 </div>
 </div>
 <div className={StyleSheet.middle}>
-    {
-        middle.map((img,index)=>(
-            <img src={img} className={StyleSheet.image1} key={index}/>
+   
+            <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733292175/restaurant/ethmduznss0ixurmvqn7.jpg' className={StyleSheet.image1} />
 
-        ))
-    }
-     
+    
 
 </div>
 <div className={StyleSheet.All}>
@@ -173,11 +150,10 @@ const Product = () => {
 
 </div>
 <div className={StyleSheet.foods}>
-    {
-        foods.map((img,index)=>(
-            <img src={img} key={index} className={StyleSheet.foodImage}/>
-        ))
-    }
+    
+            <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733293203/restaurant/foevar60xihvjbfdh8yf.png' className={StyleSheet.foodImage}/>
+            <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733293202/restaurant/yfzoff4lrzvatmv6zv6b.png'  className={StyleSheet.foodImage}/>
+            <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733293202/restaurant/qfksobcvo3qgsrx6dk1x.png'className={StyleSheet.foodImage}/>
     {dis && (
         <>
         <div className={StyleSheet.overlay}>
@@ -232,7 +208,7 @@ const Product = () => {
                          
                             </div>
                             <div className={StyleSheet.Burger}>
-                                  <img src={burger} className={StyleSheet.BurgerImage}/>
+                                  <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733292470/restaurant/cefjxbkcsk1onoihix6j.png' className={StyleSheet.BurgerImage}/>
                                   <div  className={StyleSheet.burgers}>
                                   <button type="button" onClick={() => addToCart(fod)} className={StyleSheet.burgers1}>+</button>
                                   </div>
@@ -266,7 +242,7 @@ const Product = () => {
                          
                             </div>
                             <div className={StyleSheet.Burger1}>
-                                  <img src={Fries} className={StyleSheet.BurgerImage1}/>
+                                  <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733292703/restaurant/dwqfqjbmr6pptn5poxci.png' className={StyleSheet.BurgerImage1}/>
                                   <div  className={StyleSheet.bug1}>
                                   <button type="button" onClick={() => addToCart(fod)} className={StyleSheet.burgers12}>+</button>
                                   </div>
@@ -300,7 +276,7 @@ const Product = () => {
                          
                             </div>
                             <div className={StyleSheet.Burger2}>
-                                  <img src={Shakes} className={StyleSheet.BurgerImage2}/>
+                                  <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1733292769/restaurant/n8lqchyuz5vhmctvnsrd.png' className={StyleSheet.BurgerImage2}/>
                                   <div  className={StyleSheet.bug2}>
                                   <button type="button" onClick={() => addToCart(fod)} className={StyleSheet.burgers123}>+</button>
                                   </div>
@@ -397,17 +373,12 @@ const Product = () => {
                 <p>Similar restaurants</p>
                 <div className={StyleSheet.restaurants} >
                  
-                    {randomImages.map((img, index) => (
-                        <img 
-                            key={index}
-                       
-                            src={img} 
-                            onClick={() => navigate('/product', { state: { location, userName } })} 
-                            className={StyleSheet.mcdonals} 
-                            alt={`Restaurant ${index + 1}` }
-                        
-                        />
-                    ))}
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1732775839/restaurant/McDonals.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288857/restaurant/lghxecjekulvt0bnznao.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/xmzitotdlaoe6flcouxc.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/dwxowxwrpvkav8zqd6ni.png"       onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/povpolt5eguni1falg6c.png"      onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/lmg5diklangrhc50tnpm.png" onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
                 </div>
             </div>
            <div className={StyleSheet.footerContainer}>

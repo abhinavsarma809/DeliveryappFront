@@ -19,7 +19,7 @@ const Payment = () => {
   const [confuse,setConfuse] = useState(false)
   const [state,setState] = useState(false) ;
   const [lower,setLower] = useState(false)
-    const [Second,setSecond] = useState(false)
+    
   const location = useLocation();
   const address = location.state?.address||[];
   const cart = location.state?.cart || []; 

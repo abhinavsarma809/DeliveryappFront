@@ -6,7 +6,7 @@ import image from "../../src/assets/Location.png";
 import { useNavigate } from 'react-router-dom';
 import male from "../../src/assets/Male User.png";
 import { useState,useEffect } from 'react';
-import { getImage } from '../services';
+
 import brand from '../../src/assets/Vector.png';
 import group from '../../src/assets/Group.png';
 import face from '../../src/assets/Facebook.png';
@@ -37,29 +37,9 @@ const Check = () => {
   const subtotal = itemsTotal + salesTax;
   const [imager, setImager] = useState([]);
   useEffect(()=>{
-    const fetchImage = async () => {
-      try {
-        const imageId = ['674822ee5f6b959eb49161b2','6748a0863026eb4234fcc34b','6748b0df3026eb4234fcc3c6','6748b1613026eb4234fcc3ca','6748b1873026eb4234fcc3cc','674960b218d6456bac6bae06','6749607918d6456bac6bae04','674960d218d6456bac6bae08','674960e718d6456bac6bae0a','6749611f18d6456bac6bae0c','6749614818d6456bac6bae0e','67497c2a18d6456bac6bb277','67497c6318d6456bac6bb279','67497c8618d6456bac6bb27b','67497cad18d6456bac6bb27d','67497ccd18d6456bac6bb27f','6749829b18d6456bac6bb573','6749877e18d6456bac6bb5aa','6749874718d6456bac6bb5a8']; 
-        const fetchedImages = await Promise.all(
-          imageId.map(id => getImage(id))
-      );
 
-        setImager(fetchedImages); 
-      } catch (error) {
-        console.error('Error fetching image:', error);
-      }
-    };
-    fetchImage();
   },[])
-  const randomImages = [
-    imager[0],
-    imager[11],
-    imager[12],
-    imager[13],
-    imager[14],
-    imager[15],
-    
-];
+
   return (
     <div className={StyleSheet.container}>
       <div className={StyleSheet.header}>
@@ -142,15 +122,12 @@ const Check = () => {
         <h4>Similar Restaurants</h4>
                 <div className={StyleSheet.restaurants}>
                  
-                    {randomImages.map((img, index) => (
-                        <img 
-                            key={index}
-                            src={img} 
-                            onClick={() => navigate('/product', { state: { location, userName } })} 
-                            className={StyleSheet.mcdonals} 
-                            alt={`Restaurant ${index + 1}`} 
-                        />
-                    ))}
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1732775839/restaurant/McDonals.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288857/restaurant/lghxecjekulvt0bnznao.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/xmzitotdlaoe6flcouxc.png"     onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/dwxowxwrpvkav8zqd6ni.png"       onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/povpolt5eguni1falg6c.png"      onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
+                <img src="https://res.cloudinary.com/dy6uubcd1/image/upload/v1733288856/restaurant/lmg5diklangrhc50tnpm.png" onClick={() => navigate('/product', { state: { location, userName } })}              className={StyleSheet.mcdonals}   />
                 </div>
             </div>
             <div className={StyleSheet.footerContainer}>
