@@ -30,21 +30,6 @@ export const register = async (data) => {
     }
     throw new Error('Something went wrong');
   };
-  export const getImage = async (imageId) => {
-    try {
-      const response = await fetch(`${BACKEND_URL}/api/image/${imageId}`);
-  
-      if (response.status === 200) {
-        const blob = await response.blob(); 
-        return URL.createObjectURL(blob);  
-      } else {
-        throw new Error('Error fetching image');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      throw error;
-    }
-  };
 
  
   export const getFood = async (data) => {
