@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { register } from '../services';  
 import toast from 'react-hot-toast';
 import StyleSheet from "./register.module.css";
-import { getImage} from '../services';
+
 import { useNavigate } from 'react-router-dom';
 import images from "../../src/assets/hand.jpeg";  
 
@@ -15,7 +15,7 @@ import twitter  from '../../src/assets/twitter.png';
 const Register = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const [image, setImage] = useState(null);
+
   
   const [formError, setFormError] = useState({
     name: null,
@@ -32,17 +32,8 @@ const Register = () => {
     country:'',
   });
   useEffect(() => {
-    const fetchImage = async () => {
-      try {
-        const imageId = '673f67bf21134ed2d98c7c11'; 
-        const url = await getImage(imageId);
-        setImage(url); 
-      } catch (error) {
-        console.error('Error fetching image:', error);
-      }
-    };
+  
 
-    fetchImage();
   }, []);
 
   const handleSubmit = async (e) => {
@@ -195,9 +186,7 @@ const Register = () => {
         </form>
         </div>
         <div className={StyleSheet.imagecontainer}>
-          {image && (
-            <img src={image} alt="burger" className={StyleSheet.image} />
-          )}
+      
         </div>
        
       </div>

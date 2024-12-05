@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { login, getImage } from '../services';
+import { login } from '../services';
 import toast from 'react-hot-toast';
 import StyleSheet from './login.module.css';
 import { useNavigate } from 'react-router-dom';
@@ -27,17 +27,9 @@ const Login = () => {
   });
 
   useEffect(() => {
-    const fetchImage = async () => {
-      try {
-        const imageId = '673f67bf21134ed2d98c7c11'; 
-        const url = await getImage(imageId);
-        setImage(url); 
-      } catch (error) {
-        console.error('Error fetching image:', error);
-      }
-    };
+ 
 
-    fetchImage();
+   
   }, []);
 
   const handleSubmit = async (e) => {
@@ -131,9 +123,7 @@ const Login = () => {
           </p>
         </form>
         <div className={StyleSheet.imagecontainer}>
-          {image && (
-            <img src={image} alt="burger" className={StyleSheet.image} />
-          )}
+         
         </div>
       </div>
       <div className={StyleSheet.footerContainer}>
