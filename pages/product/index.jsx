@@ -11,8 +11,8 @@ import Fries from "../../src/assets/French Fries.png";
 import Shakes from "../../src/assets/Shakes.png";
 import Locationss from "../../src/assets/Location.png";
 
-import id from "../../src/assets/ID.png";
-import reviews from "../../src/assets/reviews.jpeg";
+import id from "../../src/assets/Icon.png";
+import reviews from "../../src/assets/reviews.png";
 import brand from '../../src/assets/Vector.png';
 import group from '../../src/assets/Group.png';
 import face from '../../src/assets/Facebook.png';

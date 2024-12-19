@@ -3,7 +3,7 @@ import StyleSheet from "./details.module.css";
 import { useLocation } from "react-router-dom";
 import image from "../../src/assets/Location.png";
 import images from "../../src/assets/Basket.png";
-import menu from "../../src/assets/Menu.png";
+
 import { updateUser } from "../services/index"; 
 import brand from '../../src/assets/Vector.png';
 import group from '../../src/assets/Group.png';
@@ -11,7 +11,7 @@ import face from '../../src/assets/Facebook.png';
 import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
-import mains from '../../src/assets/mobileImage.jpeg';
+
 import male from "../../src/assets/Male User.png";
 const Details = () => {
   const locate = useLocation();
@@ -128,9 +128,7 @@ const Details = () => {
                 <h1 className={StyleSheet.uk}>uk.</h1>
            
                 </div>
-                <div className={StyleSheet.menu}>
-                  <img src={menu}/>
-                </div>
+              
                 
                 <h4 className={StyleSheet.class}>Home</h4>
                 <h4 className={StyleSheet.class1}>Browser Menu</h4>

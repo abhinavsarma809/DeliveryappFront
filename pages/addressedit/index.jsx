@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import images from "../../src/assets/Basket.png";
 import StyleSheet from "./address.module.css";
 import { useLocation } from "react-router-dom";
-import male from "../../src/assets/Male User.png";
+
 import brand from '../../src/assets/Vector.png';
 import group from '../../src/assets/Group.png';
 import face from '../../src/assets/Facebook.png';

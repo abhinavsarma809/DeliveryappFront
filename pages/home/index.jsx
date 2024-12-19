@@ -13,7 +13,7 @@ import face from '../../src/assets/Facebook.png';
 import insta from '../../src/assets/Instagram.png';
 import snap from '../../src/assets/snap.png';
 import twitter  from '../../src/assets/twitter.png';
-import mains from '../../src/assets/mobileImage.jpeg';
+
 import menu from '../../src/assets/Menu.png';
 
 
@@ -156,7 +156,7 @@ const Home = () => {
 
 </div>
 <div className={StyleSheet.mains}>
-<img src={mains}/>
+
 </div>
 
 
