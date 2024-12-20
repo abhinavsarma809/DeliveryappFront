@@ -186,7 +186,7 @@ const Register = () => {
         </form>
         </div>
         <div className={StyleSheet.imagecontainer}>
-      
+        <img src='https://res.cloudinary.com/dy6uubcd1/image/upload/v1734679170/Art_1_a3gz27.png'className={StyleSheet.image}/>
         </div>
        
       </div>
